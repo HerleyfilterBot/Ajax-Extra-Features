@@ -769,7 +769,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="start"),
             InlineKeyboardButton(text="⏺ 1/7 ⏺"),
-            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help2)
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help2")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
@@ -794,7 +794,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help"),
             InlineKeyboardButton(text="⏺ 2/7 ⏺"),
-            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help3)
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help3")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
@@ -819,7 +819,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help2"),
             InlineKeyboardButton(text="⏺ 3/7 ⏺"),
-            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help4)
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help4")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
@@ -844,7 +844,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help3"),
             InlineKeyboardButton(text="⏺ 4/7 ⏺"),
-            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help5)
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help5")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
@@ -869,7 +869,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help4"),
             InlineKeyboardButton(text="⏺ 5/7 ⏺"),
-            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help6)
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help6")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
@@ -894,7 +894,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help5"),
             InlineKeyboardButton(text="⏺ 6/7 ⏺"),
-            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help7)
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help7")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
