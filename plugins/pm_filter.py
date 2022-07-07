@@ -779,7 +779,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
-            text="Select your required mode from below!",
+            text="ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ʀᴇQᴜɪʀᴇᴅ ᴍᴏᴅᴇ ꜰʀᴏᴍ ʙᴇʟᴏᴡ !",
             reply_markup=reply_markup,
             parse_mode='html'
         )
