@@ -773,8 +773,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
-            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
-🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 𝟭/📖",
+            text="""𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 𝟭/📖""",
             reply_markup=reply_markup,
             parse_mode='html'
      )
@@ -798,8 +798,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
-            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
-🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 𝟮/𝟴 📖",
+            text="""𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 𝟮/𝟴 📖""",
             reply_markup=reply_markup,
             parse_mode='html'
      )
@@ -823,8 +823,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
-            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
-🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 3/𝟯 📖",
+            text="""𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 3/𝟯 📖"""",
             reply_markup=reply_markup,
             parse_mode='html'
       )
@@ -848,8 +848,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
-            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
-🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 /𝟯 📖",
+            text="""𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 /𝟯 📖""",
             reply_markup=reply_markup,
             parse_mode='html'
       )
@@ -873,8 +873,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
-            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
-🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 /𝟯 📖",
+            text="""𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 /𝟯 📖""",
             reply_markup=reply_markup,
             parse_mode='html'
       )
@@ -898,8 +898,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
-            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
-🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 /𝟯 📖",
+            text="""𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 /𝟯 📖""",
             reply_markup=reply_markup,
             parse_mode='html'
       )
@@ -914,8 +914,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
-            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
-🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 7 📖",
+            text="""𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 7 📖""",
             reply_markup=reply_markup,
             parse_mode='html'
       )
