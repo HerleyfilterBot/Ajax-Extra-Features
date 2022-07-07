@@ -753,7 +753,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "help":
+    elif query.data == "photo":
         buttons = [[
             InlineKeyboardButton(text="ʙʀɪɢᴛʜ", callback_data="bright"),
             InlineKeyboardButton(text="ᴍɪxᴇᴅ", callback_data="mix"),
