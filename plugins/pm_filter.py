@@ -826,7 +826,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
       )
     elif query.data == "help4":
-        buttons = [[.   
+        buttons = [[  
             InlineKeyboardButton('ᴡʜᴏɪꜱ', callback_data='whois'),
             InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='restric'),
             InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies')
