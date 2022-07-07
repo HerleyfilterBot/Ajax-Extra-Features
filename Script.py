@@ -1,15 +1,14 @@
 class script(object):
     START_TXT = """ɪᴀᴍ ᴀ ꜱɪᴍᴘʟᴇ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ + ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ + ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ ʙᴏᴛ.🔥"""
     HELP_TXT = """👋 ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ"""
-    ABOUT_TXT = """<b>✮ 𝙼𝚈 𝙽𝙰𝙼𝙴: 𝙰𝙹𝙰𝚇-𝙿𝚁𝙾-𝙼𝙰𝚇</b>
-<b>✮ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/Aadhi011>𝙰𝙰𝙳𝙷𝙸</a></b>
-<b>✮ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</b>
-<b>✮ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</b>
-<b>✮ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾-𝙳𝙱</b>
-<b>✮ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄</b>
-<b>✮ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅1.0.43</b>
-<b>✮ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂: <a href=https://t.me/MWUpdatez>𝙼𝚆-𝚄𝙿𝙳𝙰𝚃𝙴𝚉</a></b>
-<b>✮ 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻: <a href=https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA>𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉</a></b>"""
+    ABOUT_TXT = """🤖 Bᴏᴛ Nᴀᴍᴇ : <a href=https://t.me/PremiumStoreXBot>Pʀᴇᴍɪᴜᴍ Sᴛᴏʀᴇ X Bᴏᴛ</a>
+📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
+📡 𝖧ᴏsᴛᴇᴅ ᴏɴ :<a href=http://heroku.com/> ʜᴇʀᴏᴋᴜ</a>
+👨‍💻 𝖣ᴇᴠᴇʟᴏᴘᴇʀ :<a href=https://t.me/imDeveloperBot>@ɪᴍDᴇᴠᴇʟᴏᴘᴇʀBᴏᴛ</a>
+📃 𝖲ᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://github.com/EvamariaTG/EvaMaria>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a
+📚 𝖥ʀᴀᴍᴇᴡᴏʀᴋ :<a href=https://github.com/pyrogram/pyrogram> ᴘʏʀᴏɢʀᴀᴍ</a>
+📊 Dᴀᴛᴀʙᴀsᴇs Sᴀʀᴠᴇʀ : <a href=https://www.mongodb.com/>ᴍᴀɴɢᴏᴅʙ</a>
+📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/MOVIES_LEAKED_HUB> 𝖢ʟɪᴄᴋ ʜᴇʀᴇ</a>"""
     DONATION_TXT = """<b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧 & 𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧</b> 
 
 ›› <b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</b>
@@ -412,3 +411,4 @@ To Get Sticker ID
       
     STATUS = """{}\n<b>Chat Member Status</b>**\n\n```<i>Recently``` - {}\n```Within Week``` - {}\n```Within Month``` - {}\n```Long Time Ago``` - {}\nDeleted Account - {}\nBot - {}\nUnCached - {}</i>
 """
+https://github.com/EvamariaTG/EvaMaria
