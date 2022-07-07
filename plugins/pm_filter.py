@@ -753,7 +753,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "photo":
+    elif query.data == "help":
         buttons = [[
             InlineKeyboardButton(text="ʙʀɪɢᴛʜ", callback_data="bright"),
             InlineKeyboardButton(text="ᴍɪxᴇᴅ", callback_data="mix"),
@@ -769,7 +769,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="start"),
             InlineKeyboardButton(text="⏺ 1/7 ⏺"),
-            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help2")
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="start")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
