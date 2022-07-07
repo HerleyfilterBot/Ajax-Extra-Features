@@ -753,7 +753,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "help0":
+    elif query.data == "help":
         buttons = [[
             InlineKeyboardButton(text="ʙʀɪɢᴛʜ", callback_data="bright"),
             InlineKeyboardButton(text="ᴍɪxᴇᴅ", callback_data="mix"),
@@ -777,7 +777,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
      )
-    elif query.data == "help2":
+    elif query.data == "Area2":
         buttons = [[
             InlineKeyboardButton(text="ꜱᴇᴘɪᴀ", callback_data="sepia"),
             InlineKeyboardButton(text="ᴘᴇɴᴄɪʟ", callback_data="pencil"),
@@ -801,7 +801,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
      )
-    elif query.data == "help3":
+    elif query.data == "Area3":
         buttons = [[
             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='songs'),
             InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra'),
@@ -825,7 +825,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
       )
-    elif query.data == "help4":
+    elif query.data == "Area4":
         buttons = [[  
             InlineKeyboardButton('ᴡʜᴏɪꜱ', callback_data='whois'),
             InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='restric'),
@@ -849,7 +849,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
       )
-    elif query.data == "help5":
+    elif query.data == "Area5":
         buttons = [[
             InlineKeyboardButton('ɢ-ᴛʀᴀɴꜱ', callback_data='gtrans'),
             InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='newdata'),
@@ -873,7 +873,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
       )
-    elif query.data == "help6":
+    elif query.data == "Area6":
         buttons = [[
             InlineKeyboardButton('ᴘɪɴ', callback_data='pin'), 
             InlineKeyboardButton('ᴘᴀꜱᴛᴇ', callback_data='pastes'),
@@ -897,7 +897,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
       )
-    elif query.data == "help7":
+    elif query.data == "Area7":
         buttons = [[
             InlineKeyboardButton('ʀᴇᴘᴏʀᴛ', callback_data='report'),
             InlineKeyboardButton('ʏᴛ -ᴛʜᴜᴍ', callback_data='ytthumb'),
