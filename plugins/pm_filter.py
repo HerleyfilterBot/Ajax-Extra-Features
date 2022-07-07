@@ -767,6 +767,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton(text="ʀᴏᴛᴀᴛᴇ", callback_data="rotate"),
             InlineKeyboardButton(text="ᴄᴏɴꜱᴛʀᴀꜱᴛ", callback_data="contrast"),
             ],[
+            InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="start"),
+            InlineKeyboardButton(text="⏺ 1/7 ⏺"),
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help2)
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await query.message.edit_text(        
+            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 𝟭/📖",
+            reply_markup=reply_markup,
+            parse_mode='html'
+     )
+    elif query.data == "help2":
+        buttons = [[
             InlineKeyboardButton(text="ꜱᴇᴘɪᴀ", callback_data="sepia"),
             InlineKeyboardButton(text="ᴘᴇɴᴄɪʟ", callback_data="pencil"),
             InlineKeyboardButton(text="ᴄᴀʀᴛᴏᴏɴ", callback_data="cartoon"),
@@ -775,40 +788,48 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton(text="ɢʟɪᴛᴄʜ", callback_data="glitch"),
             InlineKeyboardButton(text="ʙɢ ʀᴇᴍᴏᴠᴇ", callback_data="removebg")
             ],[
-            InlineKeyboardButton(text="ɴᴇxᴛ ᴍᴏᴅᴜʟᴇ ↝", callback_data="help2")
+            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
+            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ', callback_data='coct'),
+        ],[
+            InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help"),
+            InlineKeyboardButton(text="⏺ 2/7 ⏺"),
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help3)
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(        
-            text="ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ʀᴇQᴜɪʀᴇᴅ ᴍᴏᴅᴇ ꜰʀᴏᴍ ʙᴇʟᴏᴡ !",
+            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 𝟮/𝟴 📖",
             reply_markup=reply_markup,
             parse_mode='html'
-        )
-    elif query.data == "help":
+     )
+    elif query.data == "help3":
         buttons = [[
-            InlineKeyboardButton('NEXT MODULE', callback_data='help2')
-        ]]
-    elif query.data == "help2":
-        buttons = [[
-            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ', callback_data='coct')
-            ],[
             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='songs'),
             InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra'),
             InlineKeyboardButton("ᴠɪᴅᴇᴏ", callback_data='video')
-            ],[
-            InlineKeyboardButton('ᴘɪɴ', callback_data='pin'), 
-            InlineKeyboardButton('ᴘᴀꜱᴛᴇ', callback_data='pastes'),
-            InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image')
-            ],[
-            InlineKeyboardButton('ꜰᴜɴ', callback_data='fun'), 
-            InlineKeyboardButton('ᴊɪᴏ', callback_data='son'),
-            InlineKeyboardButton('ᴛᴛꜱ', callback_data='ttss')
             ],[
             InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges'),
             InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings'),
             InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
             ],[
+            InlineKeyboardButton('ᴘɪɴ', callback_data='pin'), 
+            InlineKeyboardButton('ᴘᴀꜱᴛᴇ', callback_data='pastes'),
+            InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image')
+            ],[
+            InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help2"),
+            InlineKeyboardButton(text="⏺ 3/7 ⏺"),
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help4)
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await query.message.edit_text(        
+            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 3/𝟯 📖",
+            reply_markup=reply_markup,
+            parse_mode='html'
+      )
+    elif query.data == "help4":
+        buttons = [[.   
             InlineKeyboardButton('ᴡʜᴏɪꜱ', callback_data='whois'),
             InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='restric'),
             InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies')
@@ -821,20 +842,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴀᴜᴛᴏʙᴏᴏᴋ', callback_data='abook'),
             InlineKeyboardButton('ʟɪɴᴋ-ꜱʜᴏʀᴛ', callback_data='urlshort')
             ],[
+            InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help3"),
+            InlineKeyboardButton(text="⏺ 4/7 ⏺"),
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help5)
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await query.message.edit_text(        
+            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 /𝟯 📖",
+            reply_markup=reply_markup,
+            parse_mode='html'
+      )
+    elif query.data == "help5":
+        buttons = [[
             InlineKeyboardButton('ɢ-ᴛʀᴀɴꜱ', callback_data='gtrans'),
             InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='newdata'),
             InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ', callback_data='stats')
             ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ', callback_data='start')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "help":
-        buttons = [[
             InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ', callback_data='manuelfilter'),
             InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
             InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ', callback_data='coct')
@@ -843,6 +867,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra'),
             InlineKeyboardButton("ᴠɪᴅᴇᴏ", callback_data='video')
             ],[
+            InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help4"),
+            InlineKeyboardButton(text="⏺ 5/7 ⏺"),
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help6)
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await query.message.edit_text(        
+            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 /𝟯 📖",
+            reply_markup=reply_markup,
+            parse_mode='html'
+      )
+    elif query.data == "help6":
+        buttons = [[
             InlineKeyboardButton('ᴘɪɴ', callback_data='pin'), 
             InlineKeyboardButton('ᴘᴀꜱᴛᴇ', callback_data='pastes'),
             InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image')
@@ -851,35 +888,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴊɪᴏ', callback_data='son'),
             InlineKeyboardButton('ᴛᴛꜱ', callback_data='ttss')
             ],[
-            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges'),
-            InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings'),
-            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
-            ],[
             InlineKeyboardButton('ᴡʜᴏɪꜱ', callback_data='whois'),
             InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='restric'),
             InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies')
             ],[
+            InlineKeyboardButton(text="⏪ ʙᴀᴄᴋ", callback_data="help5"),
+            InlineKeyboardButton(text="⏺ 6/7 ⏺"),
+            InlineKeyboardButton(text="ɴᴇxᴛ ⏩", callback_data="help7)
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await query.message.edit_text(        
+            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 /𝟯 📖",
+            reply_markup=reply_markup,
+            parse_mode='html'
+      )
+    elif query.data == "help7":
+        buttons = [[
             InlineKeyboardButton('ʀᴇᴘᴏʀᴛ', callback_data='report'),
             InlineKeyboardButton('ʏᴛ -ᴛʜᴜᴍ', callback_data='ytthumb'),
             InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀꜱ ɪᴅ', callback_data='sticker')
             ],[
-            InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='corona'),
-            InlineKeyboardButton('ᴀᴜᴛᴏʙᴏᴏᴋ', callback_data='abook'),
-            InlineKeyboardButton('ʟɪɴᴋ-ꜱʜᴏʀᴛ', callback_data='urlshort')
-            ],[
-            InlineKeyboardButton('ɢ-ᴛʀᴀɴꜱ', callback_data='gtrans'),
-            InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='newdata'),
-            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ', callback_data='stats')
-            ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ', callback_data='start')
+            InlineKeyboardButton(text="ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ", callback_data="start"),
+            
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.answer("𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝗆𝗒 𝖧𝖾𝗅𝗉 𝗆𝗈𝖽𝗎𝗅𝖾")
-        await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await query.message.edit_text(        
+            text="𝗧𝗵𝗶𝘀 𝗜𝘀 𝗧𝗵𝗲 𝗠𝗼𝗱𝘂𝗹𝗲 𝗣𝗮𝗴𝗲 𝗜𝗻𝗳𝗼
+🔰 𝗬𝗼𝘂𝗿 𝗧𝗮𝗸𝗲𝗻 𝗣𝗮𝗴𝗲 𝗜𝘀 7 📖",
             reply_markup=reply_markup,
             parse_mode='html'
-        )
+      )
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://t.me/AboutAadhi')
