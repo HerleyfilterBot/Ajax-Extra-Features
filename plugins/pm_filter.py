@@ -855,10 +855,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(' ⏪ Back', callback_data='start'), 
             InlineKeyboardButton('⏺ Filter Page 1/5 ⏺'),
-            InlineKeyboardButton('Next ⏩', callback_data='hellp2')
+            InlineKeyboardButton('Next ⏩', callback_data='KGF')
         ]]
 
-     elif query.data == "hellp2":
+     elif query.data == "KGF":
         buttons = [[
             InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
             InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
