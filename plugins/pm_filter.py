@@ -805,6 +805,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
             InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image')
             ],[
+            InlineKeyboardButton(' ⏪ Back', callback_data='photo'), 
+            InlineKeyboardButton('⏺ Filter Page 1/5 ⏺'),
+            InlineKeyboardButton('Next ⏩', callback_data='photo')
+            ],[
             InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
             InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
             InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss')
@@ -831,7 +835,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?', callback_data='deploy')
             ],[
-            InlineKeyboardButton('⚚ 𝙱𝙰𝙲𝙺 ⚚', callback_data='photo')
+            InlineKeyboardButton('⚚ 𝙱𝙰𝙲𝙺 ⚚', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
