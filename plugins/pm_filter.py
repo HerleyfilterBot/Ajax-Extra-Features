@@ -855,7 +855,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(' ⏪ Back', callback_data='start'), 
             InlineKeyboardButton('⏺ Filter Page 1/5 ⏺'),
-            InlineKeyboardButton('Next ⏩', callback_data='hellp2)
+            InlineKeyboardButton('Next ⏩', callback_data='hellp2')
         ]]
 
      elif query.data == "hellp2":
