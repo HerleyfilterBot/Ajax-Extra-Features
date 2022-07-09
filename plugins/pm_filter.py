@@ -857,10 +857,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
             InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image')
             ],[
-            InlineKeyboardButton(' ⏪ Back', callback_data='photo'), 
+            InlineKeyboardButton(' ⏪ Back'), 
             InlineKeyboardButton('⏺ Filter Page 1/5 ⏺'),
-            InlineKeyboardButton('Next ⏩', callback_data='photo')
-        ],[
+            InlineKeyboardButton('Next ⏩')
+            ],[
             InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
             InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
             InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss')
@@ -896,7 +896,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "close_data":
+    elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://t.me/AboutAadhi')
             ],[
