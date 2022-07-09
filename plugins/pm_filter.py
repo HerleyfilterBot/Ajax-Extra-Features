@@ -839,7 +839,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "hellp":
+    elif query.data == hellp":
         buttons = [[
             InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
             InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
@@ -855,10 +855,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(' ⏪ Back', callback_data='start'), 
             InlineKeyboardButton('⏺ Filter Page 1/5 ⏺'),
-            InlineKeyboardButton('Next ⏩', callback_data='KGF')
+            InlineKeyboardButton('Next ⏩', callback_data='about')
         ]]
 
-     elif query.data == "KGF":
+     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
             InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
