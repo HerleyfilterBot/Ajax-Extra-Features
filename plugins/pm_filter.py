@@ -750,7 +750,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MWUpdatez'),
             InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/OpusTechz')
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='photo),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
             InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA')
@@ -855,11 +855,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(' ⏪ Back', callback_data='start'), 
             InlineKeyboardButton('⏺ Filter Page 1/5 ⏺'),
-            InlineKeyboardButton('Next ⏩', callback_data='about')
-        ]]
-
-     elif query.data == "about":
-        buttons = [[
+            InlineKeyboardButton('Next ⏩', callback_data='help')
+        ],[
             InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
             InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
             InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss')
