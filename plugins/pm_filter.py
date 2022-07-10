@@ -760,12 +760,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
-        
-        reply_markup = InlineKeyboardMarkup(buttons)        
-        await query.message.edit_text(        
-            text="Select your required mode from below!",
-            reply_markup=reply_markup,
-            parse_mode='html'
         )
     elif query.data == "about":
         buttons = [[
