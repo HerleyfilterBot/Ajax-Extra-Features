@@ -1,8 +1,8 @@
 class script(object):
     START_TXT = """ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴘʀᴇᴍɪᴜᴍ ꜱᴛᴏʀᴇ x ʙᴏᴛ , ɪ'ᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ....👋
  ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
-    HELP_TXT = """𝘐𝘢𝘮 𝘈 𝘚𝘪𝘮𝘱𝘭𝘦 𝘈𝘶𝘵𝘰 𝘍𝘪𝘭𝘵𝘦𝘳 + 𝘔𝘢𝘯𝘶𝘢𝘭 𝘍𝘪𝘭𝘵𝘦𝘳 + 
-𝘌𝘹𝘵𝘳𝘢 𝘍𝘦𝘢𝘵𝘶𝘳𝘦𝘴 𝘉𝘰𝘵. 🔥⚡"""
+    HELP_TXT = """ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴘʀᴇᴍɪᴜᴍ ꜱᴛᴏʀᴇ x ʙᴏᴛ , ɪ'ᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ....👋
+ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
     ABOUT_TXT = """🤖 Bᴏᴛ Nᴀᴍᴇ : <a href=https://t.me/PremiumStoreXBot>Pʀᴇᴍɪᴜᴍ Sᴛᴏʀᴇ X Bᴏᴛ</a>
 📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
 📡 𝖧ᴏsᴛᴇᴅ ᴏɴ :<a href=http://heroku.com/> ʜᴇʀᴏᴋᴜ</a>
@@ -72,14 +72,8 @@ Note:- Give a user details
 3. /Runs - 𝚂𝙾𝙼𝙴 𝚁𝙰𝙽𝙳𝙾𝙼 𝙳𝙸𝙰𝙻𝙾𝙶𝚄𝙴𝚂 
 4. /Goal or /Shoot - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙰 𝙶𝙾𝙰𝙻 𝙾𝚁 𝚂𝙷𝙾𝙾𝚃
 5. /luck or /cownd - 𝚂𝙿𝙸𝙽 𝙰𝙽𝙳 𝚃𝚁𝚈 𝚈𝙾𝚄𝚁 𝙻𝚄𝙲𝙺"""
-    DEPLOY_TXT = """<b>𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?</b> 
-  
-<b>✮ Deploy Tutorial ››</b> <i><b>https://youtu.be/kB9TkCs8cX0</b></i>
-
-<b>𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙷𝙴 𝙰𝙹𝙰𝚇-𝙿𝚁𝙾-𝙼𝙰𝚇 𝚁𝙴𝙿𝙾 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 <a href=https://t.me/Aadhi011>𝙰𝙰𝙳𝙷𝙸</a></b>
-
-<b>𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴</b>
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/MWUpdatez><b>𝙼𝚆-𝚄𝙿𝙳𝙰𝚃𝙴𝚉</b></a>"""
+    DEPLOY_TXT = """"""ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴘʀᴇᴍɪᴜᴍ ꜱᴛᴏʀᴇ x ʙᴏᴛ , ɪ'ᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ....👋
+ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and ᗩᒍᗩ᙭  will respond whenever a keyword is found the message
