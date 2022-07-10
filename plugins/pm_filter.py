@@ -745,7 +745,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ', callback_data='about'),
+            InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ', callback_data='deploy'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1113,8 +1113,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "deploy":
-        buttons = [[
-            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
+        buttons = [[[
+            InlineKeyboardButton('✙ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✙', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
+            ],[
+            
+            ],[
+            InlineKeyboardButton('ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='about'),
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MOVIES_LEAKED_HUB')
+            ],[
+            InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='start'),
+            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
