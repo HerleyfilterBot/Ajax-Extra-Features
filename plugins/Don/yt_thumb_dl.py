@@ -18,7 +18,7 @@ async def send_thumbnail(bot, update):
             quality = update.text.split(" | ", -1)[1]
         else:
             video = update.text
-            quality = "sd"
+            quality = "HD"
         thumbnail = ytthumb.thumbnail(
             video=video,
             quality=quality
