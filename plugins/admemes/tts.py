@@ -10,7 +10,7 @@ from pyrogram.types import Message
 
 
 def convert(text):
-    audio = StringIO()
+    audio = Helen()
     i = Translator().translate(text, dest="en")
     lang = i.src
     tts = gTTS(text, lang=lang)
