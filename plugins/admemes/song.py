@@ -107,15 +107,15 @@ async def vsong(client, message: Message):
         return
 
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
-    mi = search.result()
-    mio = mi["search_result"]
-    mo = mio[0]["link"]
-    thum = mio[0]["title"]
-    fridayz = mio[0]["id"]
-    mio[0]["channel"]
+    Video = search.result()
+    Video = Video["search_result"]
+    Video = Video[0]["link"]
+    thum = Video[0]["title"]
+    fridayz = Video[0]["id"]
+    Video[0]["channel"]
     kekme = f"https://img.youtube.com/vi/{fridayz}/hqdefault.jpg"
     await asyncio.sleep(0.6)
-    url = mo
+    url = yes
     sedlyf = wget.download(kekme)
     opts = {
         "format": "best",
