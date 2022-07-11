@@ -96,62 +96,47 @@ def get_text(message: Message) -> [None,str]:
 
 
 @Client.on_message(filters.command(["video", "mp4"]))
-async def vsong(client, message: Message):
-    urlissed = get_text(message)
-
-    pablo = await client.send_message(
-        message.chat.id, f"**𝙵𝙸𝙽𝙳𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚅𝙸𝙳𝙴𝙾** `{urlissed}`"
-    )
-    if not urlissed:
-        await pablo.edit("Invalid Command Syntax Please Check help Menu To Know More!")
-        return
-
-    search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
-    Video = search.result()
-    Video = Video["search_result"]
-    Video = Video[0]["link"]
-    thum = Video[0]["title"]
-    fridayz = Video[0]["id"]
-    Video[0]["channel"]
-    kekme = f"https://img.youtube.com/vi/{fridayz}/hqdefault.jpg"
-    await asyncio.sleep(0.6)
-    url = yes
-    sedlyf = wget.download(kekme)
-    opts = {
-        "format": "best",
-        "addmetadata": True,
-        "key": "FFmpegMetadata",
-        "prefer_ffmpeg": True,
-        "geo_bypass": True,
-        "nocheckcertificate": True,
-        "postprocessors": [{"key": "FFmpegVideoConvertor", "preferedformat": "mp4"}],
-        "outtmpl": "%(id)s.mp4",
-        "logtostderr": False,
-        "quiet": True,
-    }
+async def ytdl(_, message):
+    userLastDownloadTime = user_time.get(message.chat.id)
     try:
-        with YoutubeDL(opts) as ytdl:
-            ytdl_data = ytdl.extract_info(url, download=True)
-    except Exception as e:
-        await event.edit(event, f"**𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙵𝚊𝚒𝚕𝚎𝚍 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗..♥️** \n**Error :** `{str(e)}`")
+        if userLastDownloadTime > datetime.now():
+            wait_time = round((userLastDownloadTime - datetime.now()).total_seconds() / 60, 2)
+            await message.reply_text(f"`Wait {wait_time} Minutes before next Request`")
+            return
+    except:
+        pass
+
+    url = message.text.strip()
+    await message.reply_chat_action("typing")
+    try:
+        title, thumbnail_url, formats = extractYt(url)
+
+        now = datetime.now()
+        user_time[message.chat.id] = now + \
+                                     timedelta(minutes=youtube_next_fetch)
+
+    except Exception:
+        await message.reply_text("`Failed To Fetch Youtube Data... 😔 \nPossible Youtube Blocked server ip \n#error`")
         return
-    c_time = time.time()
-    file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"""
-**𝚃𝙸𝚃𝙻𝙴 :** [{thum}]({mo})
-**𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 :** {message.from_user.mention}
-"""
-    await client.send_video(
-        message.chat.id,
-        video=open(file_stark, "rb"),
-        duration=int(ytdl_data["duration"]),
-        file_name=str(ytdl_data["title"]),
-        thumb=sedlyf,
-        caption=capy,
-        supports_streaming=True,        
-        reply_to_message_id=message.message_id 
-    )
-    await pablo.delete()
-    for files in (sedlyf, file_stark):
-        if files and os.path.exists(files):
-            os.remove(files)
+    buttons = InlineKeyboardMarkup(list(create_buttons(formats)))
+    sentm = await message.reply_text("Processing Youtube Url 🔎 🔎 🔎")
+    try:
+        # Todo add webp image support in thumbnail by default not supported by pyrogram
+        # https://www.youtube.com/watch?v=lTTajzrSkCw
+        img = wget.download(thumbnail_url)
+        im = Image.open(img).convert("RGB")
+        output_directory = os.path.join(os.getcwd(), "downloads", str(message.chat.id))
+        if not os.path.isdir(output_directory):
+            os.makedirs(output_directory)
+        thumb_image_path = f"{output_directory}.jpg"
+        im.save(thumb_image_path,"jpeg")
+        await message.reply_photo(thumb_image_path, caption=title, reply_markup=buttons)
+        await sentm.delete()
+    except Exception as e:
+        print(e)
+        try:
+            thumbnail_url = "https://telegra.ph/file/ce37f8203e1903feed544.png"
+            await message.reply_photo(thumbnail_url, caption=title, reply_markup=buttons)
+        except Exception as e:
+            await sentm.edit(
+            f"<code>{e}</code> #Error")
