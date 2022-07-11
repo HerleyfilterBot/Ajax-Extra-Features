@@ -68,11 +68,8 @@ def song(client, message):
             ydl.process_info(info_dict)
         #print(results)
         title = results[0]["title"][:40]
-        performer = f"[ᗩᒍᗩ᙭]" 
         duration = results[0]["duration"]
         views = results[0]["views"]
-
-
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
