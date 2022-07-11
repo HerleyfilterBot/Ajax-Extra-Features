@@ -3,13 +3,21 @@ class script(object):
  ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
     HELP_TXT = """ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴘʀᴇᴍɪᴜᴍ ꜱᴛᴏʀᴇ x ʙᴏᴛ , ɪ'ᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ....👋
  ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
-    ABOUT_TXT = """🤖 Bᴏᴛ Nᴀᴍᴇ : <a href=https://t.me/PremiumStoreXBot>Pʀᴇᴍɪᴜᴍ Sᴛᴏʀᴇ X Bᴏᴛ</a>
+    ABOUT_TXT = """
+🤖 Bᴏᴛ Nᴀᴍᴇ : <a href=https://t.me/PremiumStoreXBot>Pʀᴇᴍɪᴜᴍ Sᴛᴏʀᴇ X Bᴏᴛ</a>
+
 📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
+
 📡 𝖧ᴏsᴛᴇᴅ ᴏɴ :<a href=http://heroku.com/> ʜᴇʀᴏᴋᴜ</a>
+
 👨‍💻 𝖣ᴇᴠᴇʟᴏᴘᴇʀ :<a href=https://t.me/imDeveloperBot>@ɪᴍDᴇᴠᴇʟᴏᴘᴇʀBᴏᴛ</a>
-📃 𝖲ᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://github.com/EvamariaTG/EvaMaria>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a
-📚 𝖥ʀᴀᴍᴇᴡᴏʀᴋ :<a href=https://github.com/pyrogram/pyrogram> ᴘʏʀᴏɢʀᴀᴍ</a>
+
+📃 𝖲ᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://github.com/EvamariaTG/EvaMaria>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+
+📚 𝖥ʀᴀᴍᴇᴡᴏʀᴋ : <a href=https://github.com/pyrogram/pyrogram> ᴘʏʀᴏɢʀᴀᴍ</a>
+
 📊 Dᴀᴛᴀʙᴀsᴇs Sᴀʀᴠᴇʀ : <a href=https://www.mongodb.com/>ᴍᴀɴɢᴏᴅʙ</a>
+
 📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/MOVIES_LEAKED_HUB> 𝖢ʟɪᴄᴋ ʜᴇʀᴇ</a>"""
     DONATION_TXT = """<b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧 & 𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧</b> 
 
@@ -142,9 +150,6 @@ Helps you to know your ping 🚶🏼‍♂️
 • /alive - To check you are alive.
 • /help - To get help.
 • /ping - To get your ping.
-• /repo - Source Code.
-• /channel - Channel Details.
-• /ajax - Bot Link.
 <b>🏹Usage🏹 :</b>
 
 • This commands can be used in pms and groups
@@ -167,7 +172,7 @@ Do as you wish with telegra.ph module!
 <b>›› 𝙳𝙾 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝙰 𝙱𝙾𝚃 𝚂𝙰𝙼𝙴 𝙻𝙸𝙺𝙴 𝚃𝙷𝙸𝚂</b>
 <b>›› 𝚆𝙸𝚃𝙷 𝙰𝙻𝙻 𝚈𝙾𝚄𝚁 𝙲𝚁𝙴𝙳𝙸𝚃𝚂</b>
 <b>›› 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽𝙴𝚁𝚂𝙷𝙸𝙿</b>
-<b>›› 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴 <a href=https://t.me/Aadhi011>𝙰𝙰𝙳𝙷𝙸</a></b>"""
+<b>›› 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴 <a href=https://t.me/movies_Leaked_hub>𝙰𝙰𝙳𝙷𝙸</a></b>"""
 
     JSON_TXT ="""<b>JSON:</b>
 
@@ -254,12 +259,11 @@ This module only works for my admins
 • /unban_user  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """╭━━━━᛬ ᴅᴀᴛᴀʙᴀꜱᴇ ꜱᴇʀᴠᴇʀ ꜱᴛᴀᴛᴜꜱ ᛬
+    STATUS_TXT = """
  <b>📑 ғɪʟᴇs sᴀᴠᴇᴅ : <code>{}</code></b>
  <b>👩🏻‍💻 ᴜsᴇʀs: <code>{}</code></b>
  <b>👥 ɢʀᴏᴜᴘs: <code>{}</code></b>
- <b>🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝙱</b>
-━━━━━━━━━━➣"""
+ <b>🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝙱</b>"""
     LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
     
 <b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {}(<code>{}</code>)</b>
