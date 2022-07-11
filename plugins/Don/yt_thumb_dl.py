@@ -18,13 +18,13 @@ async def send_thumbnail(bot, update):
             quality = update.text.split(" | ", -1)[1]
         else:
             video = update.text
-            quality = "sd"
-        thumbnail = ytthumb.thumbnail(
-            video=video,
+            quality = "hd"
+        video = ytthumb.video(
+            video=mp4,
             quality=quality
         )
-        await update.reply_photo(
-            photo=thumbnail,
+        await update.reply_video(
+            Video=mp4,
             quote=True
         )
         await message.delete()
