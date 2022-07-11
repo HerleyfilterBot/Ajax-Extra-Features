@@ -66,10 +66,10 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        Caption =ᴛɪᴛʟᴇ:title = results[0]["title"][:40]
-        ᴅᴜʀᴀᴛɪᴏɴ:duration = results[0]["duration"]
-        Views:views = results[0]["views"]
-        Performer:performer = f"[ᗩᒍᗩ᙭]"
+        Caption =ᴛɪᴛʟᴇ:<atitle = results[0]["title"][:40]</a>
+        ᴅᴜʀᴀᴛɪᴏɴ:<aduration = results[0]["duration"]</a>
+        Views:<aviews = results[0]["views"]</a>
+        Performer:<aperformer = f"[ᗩᒍᗩ᙭]"</a>
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
