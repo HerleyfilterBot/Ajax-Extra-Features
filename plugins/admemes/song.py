@@ -36,10 +36,10 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("**ѕєαrchíng чσur ѕσng...!**")
+    m = message.reply("**ꜱᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ 🗣...!**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
-        results = YoutubeSearch(query, max_results=1).to_dict()
+        results = YoutubeSearch(query, max_results=6).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
         #print(results)
         title = results[0]["title"][:40]       
@@ -47,24 +47,24 @@ def song(client, message):
         thumb_name = f'thumb{title}.jpg'
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
-        performer = f"[YouTube]" 
+        performer = f"[𝖯𝗋𝖾𝗆𝗂𝗎𝗆 𝗌𝗍𝗈𝗋𝖾 𝗑 𝖡𝗈𝗍]" 
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
 
     except Exception as e:
         m.edit(
-            "**𝙵𝙾𝚄𝙽𝙳 𝙽𝙾𝚃𝙷𝙸𝙽𝙶 𝙿𝙻𝙴𝙰𝚂𝙴 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝚃𝙷𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙾𝚁 𝚂𝙴𝙰𝚁𝙲𝙷 𝙰𝙽𝚈 𝙾𝚃𝙷𝙴𝚁 𝚂𝙾𝙽𝙶**"
+            "**ᴘʟᴇᴀꜱᴇ ᴡʀɪᴛᴇ ᴛʜᴇ ɴᴀᴍᴇ ᴏꜰ ᴛʜᴇ ꜱᴏɴɢ...!**"
         )
         print(str(e))
         return
-    m.edit("**dσwnlσαdíng чσur ѕσng...!**")
+    m.edit("**ᴅᴏᴡɴʟᴏᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ ...!**")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-            title =results[0]["title"][:40]
+            title =<a =results[0]["title"][:40]/>ꜱᴏɴɢ ɴᴀᴍᴇ :</a>]
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -72,7 +72,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=title, parse_mode='md',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit("**🚫 𝙴𝚁𝚁𝙾𝚁 🚫**")
+        m.edit("**ᴏᴘᴘꜱ ᴇʀʀᴏʀ ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ...! 🤯**")
         print(e)
 
     try:
@@ -98,10 +98,10 @@ async def vsong(client, message: Message):
     urlissed = get_text(message)
 
     pablo = await client.send_message(
-        message.chat.id, f"**𝙵𝙸𝙽𝙳𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚅𝙸𝙳𝙴𝙾** `{urlissed}`"
+        message.chat.id, f"**ꜱᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ** `{urlissed}`"
     )
     if not urlissed:
-        await pablo.edit("Invalid Command Syntax Please Check help Menu To Know More!")
+        await pablo.edit("ᴏᴘᴘꜱ ᴇʀʀᴏʀ ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ...! 🤯Invalid Command")
         return
 
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
@@ -111,7 +111,7 @@ async def vsong(client, message: Message):
     thum = mio[0]["title"]
     fridayz = mio[0]["id"]
     mio[0]["channel"]
-    kekme = f"https://img.youtube.com/vi/{fridayz}/hqdefault.jpg"
+    kekme = f"https://img.youtube.com/vi/{fridayz}/hqdefault.Mp4"
     await asyncio.sleep(0.6)
     url = mo
     sedlyf = wget.download(kekme)
@@ -131,13 +131,13 @@ async def vsong(client, message: Message):
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url, download=True)
     except Exception as e:
-        await event.edit(event, f"**𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙵𝚊𝚒𝚕𝚎𝚍 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗..♥️** \n**Error :** `{str(e)}`")
+        await event.edit(event, f"**ᴏᴘᴘꜱ ᴇʀʀᴏʀ ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ...! 🤯** \n**Error :** `{str(e)}`")
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""
-**𝚃𝙸𝚃𝙻𝙴 :** [{thum}]({mo})
-**𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 :** {message.from_user.mention}
+**ᴛɪᴛʟᴇ :** [{thum}]({mo})
+**ʀᴇQᴜᴇꜱᴛ ʙʏ :** {message.from_user.mention}
 """
     await client.send_video(
         message.chat.id,
