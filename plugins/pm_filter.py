@@ -790,8 +790,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb'),
             InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ ɪᴅ', callback_data='sticker')
             ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ', callback_data='start')
-       ]]
+            InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('ɴᴇxᴛ ⏩', callback_data='admin')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -1074,8 +1075,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "admin":
-        buttons = [[
-            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='extra')
+        buttons = [[  
+            InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='corona'),
+            InlineKeyboardButton('ᴀᴜᴅɪᴏ ʙᴏᴏᴋ', callback_data='abook'),
+            InlineKeyboardButton('ᴜʀʟ-ꜱʜᴏʀᴛ', callback_data='urlshort')
+            ],[
+            InlineKeyboardButton('ɢ-ᴛʀᴀɴꜱ', callback_data='gtrans'),
+            InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='newdata'),
+            InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='son')
+            ],[
+            InlineKeyboardButton('🔮 ꜱᴛᴀᴛᴜꜱ 🔮', callback_data='stats')
+            ],[
+            InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close'),
+            InlineKeyboardButton('ʜᴏᴍᴇ 🏠', callback_data='deploy')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1272,12 +1284,12 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"⏺ 1/{round(int(total_results) / 10 ⏺)}", callback_data="pages"),
+             InlineKeyboardButton(text="Nᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="⏺ 1/1", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
