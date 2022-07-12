@@ -66,12 +66,12 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict
-            title = results[0]["title"][:40]
+           TEXT- title = results[0]["title"][:40]
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=title, parse_mode='md',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
+        message.reply_audio(audio_file, caption=TEXT, parse_mode='md',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
         m.edit("**🚫 𝙴𝚁𝚁𝙾𝚁 🚫**")
