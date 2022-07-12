@@ -84,17 +84,17 @@ async def fil_mod(client, message):
       try: 
          args = message.text.split(None, 1)[1].lower() 
       except: 
-         return await message.reply("**𝙸𝙽𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴 𝙲𝙾𝙼𝙼𝙰𝙽𝙳...**")
+         return await message.reply("**ɪɴᴄᴏᴍᴘʟᴇᴛᴇ ᴄᴏᴍᴍᴀɴᴅ...**")
       
-      m = await message.reply("**𝚂𝙴𝚃𝚃𝙸𝙽𝙶.../**")
+      m = await message.reply("**ꜱᴀᴛᴛɪɴɢ.../**")
 
       if args in mode_on:
           FILTER_MODE[str(message.chat.id)] = "True" 
-          await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙴𝙽𝙰𝙱𝙻𝙴𝙳**")
+          await m.edit("**ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ᴇɴᴀʙʟᴇ**")
       
       elif args in mode_of:
           FILTER_MODE[str(message.chat.id)] = "False"
-          await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳**")
+          await m.edit("**ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ᴅɪꜱᴀʙʟᴇ**")
       else:
           await m.edit("𝚄𝚂𝙴 :- /autofilter on 𝙾𝚁 /autofilter off")
 
@@ -151,14 +151,14 @@ async def give_filter(client,message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("😁 𝗛𝗲𝘆 𝗙𝗿𝗶𝗲𝗻𝗱,𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿𝘀𝗲𝗹𝗳.", show_alert=True)
+        return await query.answer("ᴴᵉʸ ᶠʳᶦᵉⁿᵈ ᵖˡᵉᵃˢᵉ ˢᵉᵃʳᶜʰ ʸᵒᵘʳˢᵉˡᶠ 🫣", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("𝐋𝐢𝐧𝐤 𝐄𝐱𝐩𝐢𝐫𝐞𝐝 𝐊𝐢𝐧𝐝𝐥𝐲 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐀𝐠𝐚𝐢𝐧 🙂.", show_alert=True)
+        await query.answer("ʟɪɴᴋ ᴇxᴘɪʀᴇᴅ ᴋɪɴᴅʟʏ ᴘʟᴇᴀꜱᴇ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ 🤯.", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -201,20 +201,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}",
+            [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"ᴘᴀɢᴇ {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"ᴘᴀɢᴇ {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("Nᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"ᴘᴀɢᴇ {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("Nᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -230,12 +230,12 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("😁 𝗛𝗲𝘆 𝗙𝗿𝗶𝗲𝗻𝗱,𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿𝘀𝗲𝗹𝗳.", show_alert=True)
+        return await query.answer("ᴴᵉʸ ᶠʳᶦᵉⁿᵈ ᵖˡᵉᵃˢᵉ ˢᵉᵃʳᶜʰ ʸᵒᵘʳˢᵉˡᶠ 🫣.", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
-        return await query.answer("𝐋𝐢𝐧𝐤 𝐄𝐱𝐩𝐢𝐫𝐞𝐝 𝐊𝐢𝐧𝐝𝐥𝐲 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐀𝐠𝐚𝐢𝐧 🙂.", show_alert=True)
+        return await query.answer("ʟɪɴᴋ ᴇxᴘɪʀᴇᴅ ᴋɪɴᴅʟʏ ᴘʟᴇᴀꜱᴇ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ 🤯", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙵𝙸𝙻𝙴 𝙾𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴...//')
     k = await manual_filters(bot, query.message, text=movie)
@@ -245,7 +245,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴 💌')
+            k = await query.message.edit('ᴏᴏᴘꜱ !! ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ɴᴏᴛ ʏᴇᴛ ʀᴇʟᴇᴀꜱᴇᴅ ᴏʀ ᴀᴅᴅᴇᴅ ᴛᴏ ᴅᴀᴛᴀʙᴀꜱᴇ 🫣')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -767,7 +767,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴘᴀꜱᴛᴇ', callback_data='pastes'),
             InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image')
             ],[
-            InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='deploy'),
             InlineKeyboardButton('ɴᴇxᴛ ⏩', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -790,7 +790,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb'),
             InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ ɪᴅ', callback_data='sticker')
             ],[
-            InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source'),
             InlineKeyboardButton('ɴᴇxᴛ ⏩', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1077,7 +1077,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🔮 ꜱᴛᴀᴛᴜꜱ 🔮', callback_data='stats')
             ],[
-            InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close'),
+            InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
             InlineKeyboardButton('ʜᴏᴍᴇ 🏠', callback_data='deploy')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1088,7 +1088,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "abook":
         buttons = [[
-            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='admin)
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1121,11 +1121,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('✙ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✙', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
             ],[
-            InlineKeyboardButton('ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='source'),
+            InlineKeyboardButton('ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='source'),
             InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MOVIES_LEAKED_HUB'),
             ],[
             InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 🔰', callback_data='about')
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1438,3 +1438,4 @@ async def manual_filters(client, message, text=False):
         return False
 
 #ᗩᒍᗩ᙭
+ʟɪɴᴋ ᴇxᴘɪʀᴇᴅ ᴋɪɴᴅʟʏ ᴘʟᴇᴀꜱᴇ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ 🤯
