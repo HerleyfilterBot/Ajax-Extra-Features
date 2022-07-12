@@ -1436,6 +1436,3 @@ async def manual_filters(client, message, text=False):
                 break
     else:
         return False
-
-#ᗩᒍᗩ᙭
-ʟɪɴᴋ ᴇxᴘɪʀᴇᴅ ᴋɪɴᴅʟʏ ᴘʟᴇᴀꜱᴇ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ 🤯
