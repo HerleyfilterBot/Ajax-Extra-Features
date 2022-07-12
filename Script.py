@@ -3,8 +3,8 @@ class script(object):
  ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
     HELP_TXT = """ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴘʀᴇᴍɪᴜᴍ ꜱᴛᴏʀᴇ x ʙᴏᴛ , ɪ'ᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ....👋
  ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
-    ABOUT_TXT = """**
-🤖 Bᴏᴛ Nᴀᴍᴇ : <a href=https://t.me/PremiumStoreXBot>@ᴘʀᴇᴍɪᴜᴍꜱᴛᴏʀᴇxʙᴏᴛ</a>
+    ABOUT_TXT = """
+**🤖 Bᴏᴛ Nᴀᴍᴇ : <a href=https://t.me/PremiumStoreXBot>@ᴘʀᴇᴍɪᴜᴍꜱᴛᴏʀᴇxʙᴏᴛ</a>**
 
 📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
 
@@ -18,7 +18,7 @@ class script(object):
 
 📊 Dᴀᴛᴀʙᴀsᴇs Sᴀʀᴠᴇʀ : <a href=https://www.mongodb.com/>ᴍᴀɴɢᴏᴅʙ</a>
 
-📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/MOVIES_LEAKED_HUB> 𝖢ʟɪᴄᴋ ʜᴇʀᴇ</a>**"""
+📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/MOVIES_LEAKED_HUB> 𝖢ʟɪᴄᴋ ʜᴇʀᴇ</a>"""
     DONATION_TXT = """<b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧 & 𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧</b> 
 
 ›› <b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</b>
