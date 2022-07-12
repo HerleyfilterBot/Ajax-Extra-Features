@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙱𝙾𝚃', url=f"https://t.me/AboutAadhi")
+                InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ 👥', url='https://t.me/MOVIES_LEAKED_HUB')
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
