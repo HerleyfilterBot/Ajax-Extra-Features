@@ -772,7 +772,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+            text=**Welcome to Help Area 1 🎁**.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
          )
@@ -795,7 +795,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+            text=**Welcome to Help Area 2 🎁**.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
         )
