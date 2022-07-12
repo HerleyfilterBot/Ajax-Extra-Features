@@ -753,7 +753,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "about":
+    elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('ꜰɪʟᴛᴇʀ', callback_data='manuelfilter'),
             InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ', callback_data='autofilter'),
@@ -967,16 +967,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.TELE_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
-        )         
-    elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SOURCE_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
         )
     elif query.data == "manuelfilter":
         buttons = [[
@@ -1131,7 +1121,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('✙ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✙', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
             ],[
-            InlineKeyboardButton('ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='about'),
+            InlineKeyboardButton('ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='source'),
             InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MOVIES_LEAKED_HUB'),
             ],[
             InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='start'),
