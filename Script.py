@@ -3,7 +3,7 @@ class script(object):
  ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
     HELP_TXT = """ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴘʀᴇᴍɪᴜᴍ ꜱᴛᴏʀᴇ x ʙᴏᴛ , ɪ'ᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ....👋
  ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
-    ABOUT_TXT = """**
+    ABOUT_TXT = ""**
 🤖 Bᴏᴛ Nᴀᴍᴇ : <a href=https://t.me/PremiumStoreXBot>@ᴘʀᴇᴍɪᴜᴍꜱᴛᴏʀᴇxʙᴏᴛ</a>
 
 📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
