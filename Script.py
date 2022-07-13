@@ -3,10 +3,9 @@ class script(object):
  ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ...!"""
     AREA_TXT = """Welcome to Help Area 1 🎁"""
     AREA_TXT2 ="""Welcome to Help Area 3 🎁"""
-    HELP_TXT = """Hᴇʟʟᴏ .
-Welcome to Help Area 2 🎁"""
+    HELP_TXT = """Welcome to Help Area 2 🎁"""
     ABOUT_TXT = """
-**🤖 Bᴏᴛ Nᴀᴍᴇ : <a href=https://t.me/PremiumStoreXBot>@ᴘʀᴇᴍɪᴜᴍꜱᴛᴏʀᴇxʙᴏᴛ</a>**
+🤖 Bᴏᴛ Nᴀᴍᴇ : <a href=https://t.me/PremiumStoreXBot>@ᴘʀᴇᴍɪᴜᴍꜱᴛᴏʀᴇxʙᴏᴛ</a>
 
 📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
 
