@@ -29,8 +29,7 @@ class script(object):
 ᴇxᴀᴍᴘʟᴇ: 
 
 /batch https://t.me/TeamEvamaria/10 https://t.me/TeamEvamaria/20"""
-Note:- Give a user details
-•/whois :-give a user full details"""
+
     FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
    
  <b>ᴊᴜꜱᴛ ꜱᴏᴍᴇ ᴋɪɴᴅ ᴏꜰ ꜰᴜɴ ᴛʜɪɴɢꜱ</b>
