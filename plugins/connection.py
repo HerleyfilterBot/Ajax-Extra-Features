@@ -17,7 +17,7 @@ async def addconnection(client,message):
             cmd, group_id = message.text.split(" ", 1)
         except:
             await message.reply_text(
-                "<b>𝙴𝙽𝚃𝙴𝚁 𝙸𝙽 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝙵𝙾𝚁𝙼𝙰𝚃</b>\n"
+                "<b>ᴇɴᴛᴇʀ ɪɴ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ</b>\n"
                 "**/connect 𝙶𝚁𝙾𝚄𝙿 𝙸𝙳\n**"
                 "**Get your Group id by adding this bot to your group and use  <code>/id</code>**",
                 quote=True
@@ -53,7 +53,7 @@ async def addconnection(client,message):
             addcon = await add_connection(str(group_id), str(userid))
             if addcon:
                 await message.reply_text(
-                    f"𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙾𝙽𝙽𝙴𝙲𝚃 𝚃𝙾 **{title}**\n𝙽𝙾𝚆 𝚈𝙾𝚄 𝙲𝙰𝙽 𝙼𝙰𝙽𝙰𝙶𝙴 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙵𝚁𝙾𝙼 𝙷𝙴𝚁𝙴../",
+                    f"ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ **{title}**\nɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰᴏʀᴍ ʜᴇʀᴇ../",
                     quote=True,
                     parse_mode="md"
                 )
@@ -65,14 +65,14 @@ async def addconnection(client,message):
                     )
             else:
                 await message.reply_text(
-                    "You're already connected to this chat!",
+                    "ʏᴏᴜ'ʀᴇ ᴀʟʀᴇᴀᴅʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴛʜɪꜱ ᴄʜᴀᴛ!",
                     quote=True
                 )
         else:
-            await message.reply_text("Add me as an admin in group", quote=True)
+            await message.reply_text("ᴀᴅᴅ ᴍᴇ ᴀꜱ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ɢʀᴏᴜᴘ", quote=True)
     except Exception as e:
         logger.exception(e)
-        await message.reply_text('Some error occured! Try again later.', quote=True)
+        await message.reply_text('ꜱᴏᴍᴇ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ! ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.', quote=True)
         return
 
 
@@ -122,7 +122,7 @@ async def connections(client,message):
             ttl = await client.get_chat(int(groupid))
             title = ttl.title
             active = await if_active(str(userid), str(groupid))
-            act = " › 𝙰𝙲𝚃𝙸𝚅𝙴" if active else ""
+            act = " ᴀᴄᴛɪᴠᴇ ɪꜰ ᴀᴄᴛɪᴠᴇ ᴇʟꜱᴇ ""
             buttons.append(
                 [
                     InlineKeyboardButton(
@@ -134,12 +134,12 @@ async def connections(client,message):
             pass
     if buttons:
         await message.reply_text(
-            "𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝙶𝚁𝙾𝚄𝙿𝚂 :-\n\n",
+            "ᴄᴏɴɴᴇᴄᴛ ɢʀᴏᴜᴘꜱ :-\n\n",
             reply_markup=InlineKeyboardMarkup(buttons),
             quote=True
         )
     else:
         await message.reply_text(
-            "There are no active connections!! Connect to some groups first.",
+            "ᴛʜᴇʀᴇ ᴀʀᴇ ɴᴏ ᴀᴄᴛɪᴠᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ!! ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ꜱᴏᴍᴇ ɢʀᴏᴜᴘꜱ ꜰɪʀꜱᴛ.",
             quote=True
         )
