@@ -60,10 +60,11 @@ async def showid(client, message):
 @Client.on_message(filters.command("about"))
 async def aboutme(client, message):
         buttons= [[
-            InlineKeyboardButton('♥️ 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 ♥️', url='https://youtu.be/kB9TkCs8cX0')
+            InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ 👥', url='https://t.me/MOVIES_LEAKED_HUB')
             ],[
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+            InlineKeyboardButton('ʜᴏᴍᴇ🏠', callback_data='start'),            
+            InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
+            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑', url='https://github.com/EvamariaTG/EvaMaria')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -77,10 +78,10 @@ async def aboutme(client, message):
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
     status_message = await message.reply_text(
-        "`𝚂𝙴𝙰𝚁𝙲𝙷𝙸𝙽𝙶 𝚄𝚂𝙴𝚁...`"
+        "`ꜱᴇᴀʀᴄʜɪɴɢ ᴜꜱᴇʀꜱ 📡...`"
     )
     await status_message.edit(
-        "`𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽...`"
+        "`ᴀᴄᴄᴇꜱꜱɪɴɢ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ📡...`"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -92,15 +93,15 @@ async def who_is(client, message):
     if from_user is None:
         return await status_message.edit("no valid user_id / message specified")
     message_out_str = ""
-    message_out_str += f"<b>➾ First Name:</b> {from_user.first_name}\n"
+    message_out_str += f"<b>First Name:</b> {from_user.first_name}\n"
     last_name = from_user.last_name or "<b>None</b>"
-    message_out_str += f"<b>➾ Last Name:</b> {last_name}\n"
-    message_out_str += f"<b>➾ Telegram ID:</b> <code>{from_user.id}</code>\n"
+    message_out_str += f"<b>Last Name:</b> {last_name}\n"
+    message_out_str += f"<b>ID:</b> <code>{from_user.id}</code>\n"
     username = from_user.username or "<b>None</b>"
     dc_id = from_user.dc_id or "[User Doesnt Have A Valid DP]"
-    message_out_str += f"<b>➾ Data Centre:</b> <code>{dc_id}</code>\n"
-    message_out_str += f"<b>➾ User Name:</b> @{username}\n"
-    message_out_str += f"<b>➾ User 𝖫𝗂𝗇𝗄:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\n"
+    message_out_str += f"<b>Data Centre:</b> <code>{dc_id}</code>\n"
+    message_out_str += f"<b>User Name:</b> @{username}\n"
+    message_out_str += f"<b>User 𝖫𝗂𝗇𝗄:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\n"
     if message.chat.type in (("supergroup", "channel")):
         try:
             chat_member_p = await message.chat.get_member(from_user.id)
@@ -108,7 +109,7 @@ async def who_is(client, message):
                 chat_member_p.joined_date or time.time()
             ).strftime("%Y.%m.%d %H:%M:%S")
             message_out_str += (
-                "<b>➾ Joined this Chat on:</b> <code>"
+                "<b>Joined this Chat on:</b> <code>"
                 f"{joined_date}"
                 "</code>\n"
             )
@@ -120,7 +121,7 @@ async def who_is(client, message):
             message=chat_photo.big_file_id
         )
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -134,7 +135,7 @@ async def who_is(client, message):
         os.remove(local_user_photo)
     else:
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -144,64 +145,15 @@ async def who_is(client, message):
             parse_mode="html",
             disable_notification=True
         )
-    await status_message.delete()
-
-@Client.on_message(filters.command("help"))
-async def help(client, message):
-        buttons = [[
-            InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
-            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct')
-            ],[
-            InlineKeyboardButton('𝚂𝙾𝙽𝙶', callback_data='songs'),
-            InlineKeyboardButton('𝙴𝚇𝚃𝚁𝙰', callback_data='extra'),
-            InlineKeyboardButton("𝚅𝙸𝙳𝙴𝙾", callback_data='video')
-            ],[
-            InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin'), 
-            InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
-            InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image')
-            ],[
-            InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
-            InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
-            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss')
-            ],[
-            InlineKeyboardButton('𝙿𝚄𝚁𝙶𝙴', callback_data='purges'),
-            InlineKeyboardButton('𝙿𝙸𝙽𝙶', callback_data='pings'),
-            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷', callback_data='tele')
-            ],[
-            InlineKeyboardButton('𝚆𝙷𝙾𝙸𝚂', callback_data='whois'),
-            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
-            InlineKeyboardButton('𝙺𝙸𝙲𝙺', callback_data='zombies')
-            ],[
-            InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
-            InlineKeyboardButton('𝚈𝚃-𝚃𝙷𝚄𝙼𝙱', callback_data='ytthumb'),
-            InlineKeyboardButton('𝚂𝚃𝙸𝙲𝙺𝙴𝚁-𝙸𝙳', callback_data='sticker')
-            ],[
-            InlineKeyboardButton('𝙲𝙾𝚅𝙸𝙳', callback_data='corona'),
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
-            InlineKeyboardButton('𝚄𝚁𝙻-𝚂𝙷𝙾𝚁𝚃', callback_data='urlshort')
-            ],[
-            InlineKeyboardButton('𝙶-𝚃𝚁𝙰𝙽𝚂', callback_data='gtrans'),
-            InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
-            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.HELP_TXT.format(message.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-
-
+    
 @Client.on_message(filters.command(["imdb", 'search']))
 async def imdb_search(client, message):
     if ' ' in message.text:
-        k = await message.reply('Searching ImDB')
+        k = await message.reply('ꜱᴇᴀʀᴄʜɪɴɢ ɪᴍᴅʙ ɪɴꜰᴏ 📡')
         r, title = message.text.split(None, 1)
         movies = await get_poster(title, bulk=True)
         if not movies:
-            return await message.reply("No results Found")
+            return await message.reply("ɴᴏ ʀᴇꜱᴜʟᴛꜱ ꜰᴏᴜɴᴅ 🗂")
         btn = [
             [
                 InlineKeyboardButton(
@@ -213,7 +165,7 @@ async def imdb_search(client, message):
         ]
         await k.edit('Here is what i found on IMDb', reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply('Give me a movie / series Name')
+        await message.reply('ɢɪᴠᴇ ᴍᴇ ᴀ ᴍᴏᴠɪᴇ / ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ 🗣')
 
 @Client.on_callback_query(filters.regex('^imdb'))
 async def imdb_callback(bot: Client, quer_y: CallbackQuery):
@@ -276,5 +228,3 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
     else:
         await quer_y.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
     await quer_y.answer()
-
-
