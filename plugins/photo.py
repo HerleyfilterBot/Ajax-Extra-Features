@@ -7,7 +7,7 @@ async def photo(client: Client, message: Message):
     try:
         await client.send_message(
             chat_id=message.chat.id,
-            text="ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ʀᴇQᴜɪʀᴇᴅ ᴍᴏᴅᴇ ꜰʀᴏᴍ ʙᴇʟᴏᴡ!"),
+            text="ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ʀᴇQᴜɪʀᴇᴅ ᴍᴏᴅᴇ ꜰʀᴏᴍ ʙᴇʟᴏᴡ!")
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
