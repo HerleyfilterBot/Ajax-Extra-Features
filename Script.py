@@ -200,7 +200,9 @@ Cᴏᴍᴍᴀɴᴅs ᴜsᴇ :
 
 𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 /short ᴘᴀꜱᴛ ʏᴏᴜʀ ᴜʀʟ"""
-
+    WHOIS_TXT ="""<b>WHOIS MODULE</b>
+Note:- Give a user details
+•/whois :-give a user full details"""
     VIDEO_TXT ="""
 ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
 
