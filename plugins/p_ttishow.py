@@ -42,8 +42,7 @@ async def save_group(bot, message):
             ]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"ᴛʜᴀɴᴋꜱ ᴛᴏ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜ ɢʀᴏᴜᴘ 
-ᴅᴏɴ'ᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ 🤖",
+            text=f"<b>ᴛʜᴀɴᴋꜱ ᴛᴏ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜ ɢʀᴏᴜᴘ\nᴅᴏɴ'ᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ 🤖<b>",
             reply_markup=reply_markup)
     else:
         for u in message.new_chat_members:
