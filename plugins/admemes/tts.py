@@ -10,7 +10,7 @@ from pyrogram.types import Message
 
 
 def convert(text):
-    audio = Helen()
+    audio = BytesIO()
     i = Translator().translate(text, dest="en")
     lang = i.src
     tts = gTTS(text, lang=lang)
@@ -22,10 +22,10 @@ def convert(text):
 @Client.on_message(filters.command("tts"))
 async def text_to_speech(_, message: Message):
     if not message.reply_to_message:
-        return await message.reply_text("Reply to some text ffs.")
+        return await message.reply_text("ʀᴇᴘʟʏ ᴛᴏ ꜱᴏᴍᴇ ᴛᴇxᴛ 💬")
     if not message.reply_to_message.text:
-        return await message.reply_text("Reply to some text ffs.")
-    m = await message.reply_text("Processing")
+        return await message.reply_text("ʀᴇᴘʟʏ ᴛᴏ ꜱᴏᴍᴇ ᴛᴇxᴛ 💬")
+    m = await message.reply_text("ᴘʀᴏᴄᴇꜱꜱɪɴɢ")
     text = message.reply_to_message.text
     try:
         loop = get_running_loop()
