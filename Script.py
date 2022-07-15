@@ -1,8 +1,11 @@
 class script(object):
     START_TXT = """Iam A Simple Auto Filter + Manual Filter + Extra Features Bot. I Can Provide Movies In Telegram Groups.I Can Also Add Filters In Telegram Groups.  Just Add Me To Your Group And Enjoy"""
-    AREA_TXT = """Welcome to Help Area 1 🎁"""
-    AREA_TXT2 ="""Welcome to Help Area 3 🎁"""
-    HELP_TXT = """Welcome to Help Area 2 🎁"""
+    AREA_TXT = Hey {}
+**Welcome to Help Area 1 🎁**
+    AREA_TXT2 ="""Hey {}
+Welcome to Help Area 3 🎁"""
+    HELP_TXT = """Hey {}
+Welcome to Help Area 2 🎁"""
     ABOUT_TXT = """
 📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
 
@@ -21,11 +24,7 @@ class script(object):
 
 /link - ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ ᴛᴏ ɢᴇᴛ ʟɪɴᴋ
 
-/batch - ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟɪɴᴋ ꜰᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ꜰɪʟᴇꜱ
-
-ᴇxᴀᴍᴘʟᴇ: 
-
-/batch https://t.me/TeamEvamaria/10 https://t.me/TeamEvamaria/20"""
+/batch - ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟɪɴᴋ ꜰᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ꜰɪʟᴇꜱ"""
 
     FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
    
