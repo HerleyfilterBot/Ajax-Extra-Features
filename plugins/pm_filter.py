@@ -826,7 +826,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "image":
-        buttons=   InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
+        buttons= [[
+              InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
             InlineKeyboardButton('ʜᴏᴍᴇ 🏠', callback_data='deploy')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
