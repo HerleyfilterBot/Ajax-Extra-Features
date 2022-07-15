@@ -41,12 +41,12 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ', callback_data='deploy'),
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)        
-            await message.START_TXT
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
+        await client.send_message(
+            chat_id=message.from_user.id,
+            text="**ꜰɪꜱᴛ ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ!**",
+            reply_markup=InlineKeyboardMarkup(btn),
+            parse_mode="markdown"
+            )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
@@ -75,11 +75,12 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ', callback_data='deploy'),
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
+        await client.send_message(
+            chat_id=message.from_user.id,
+            text="**ꜰɪꜱᴛ ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ!**",
+            reply_markup=InlineKeyboardMarkup(btn),
+            parse_mode="markdown"
+            )
         return
     data = message.command[1]
     try:
