@@ -1,6 +1,5 @@
 class script(object):
-    START_TXT = """
-👋 ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ"""
+    START_TXT = """Iam A Simple Auto Filter + Manual Filter + Extra Features Bot. I Can Provide Movies In Telegram Groups.I Can Also Add Filters In Telegram Groups.  Just Add Me To Your Group And Enjoy"""
     AREA_TXT = """Welcome to Help Area 1 🎁"""
     AREA_TXT2 ="""Welcome to Help Area 3 🎁"""
     HELP_TXT = """Welcome to Help Area 2 🎁"""
