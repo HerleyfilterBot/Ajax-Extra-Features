@@ -67,7 +67,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton("ᴛʀʏ ᴀɢᴀɪɴ", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇꜱ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ !**",
+            text="**ꜰɪꜱᴛ ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
