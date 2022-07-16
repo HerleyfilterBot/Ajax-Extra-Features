@@ -83,18 +83,72 @@ Just Send An Image To Bot You Can Edit That Image With Your Choice ✅
  You Can Send A Text With /tts Command And You Will Get An Audio File Of That Text To Speech ✅
 
 • Purge 🗑️
-You Can Delete All Messages using /purge Command ✅
+You Can Delete All Messages using /purge Command 
 
-• Telegraph ✅
+•  Auto Filter On/Off ✅
+/autofilter on - Enable Autofilter On Your Groups.
+ /autofilter off - Disabled Autofilter On Your Groups.
 
-• Audio Book ✅"""
-    SONG_TXT = """<b>ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ</b>
+•  Set Custom IMDB Template 
+/set_template - Set 
+/get_template - Get
 
-<b>ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ᴜꜱᴀɢᴇꜱ:</b>
+•  Song Download ✅
+ /song Song Name
 
-/song ᴛʏᴘᴇ ꜱᴏɴɢ ɴᴀᴍᴇ 
+• 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘠𝘰𝘶𝘵𝘶𝘣𝘦 Video 🎦
+• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
+/mp4 https://youtu.be/
 
-ᴡᴏʀᴋ ᴏɴʟʏ ᴏɴ ɢʀᴏᴜᴘ"""
+•  Pin A Message../ 💬
+◉ /pin :- To Pin The Message On Your Chat
+◉ /unpin :- To Unpin Current Pinned Message
+
+• Paste.../
+Paste some texts or documents on a website!
+• /paste [text] - paste the given text on Pasty
+
+• Youtube Thumbnail ✅
+
+Helps You To Download Any Youtube Video Thumbnail 🖼️
+
+• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
+/ytthumb https://youtu.be/8xp8s6tj0Ts
+
+• Sticker ID✅
+◉ Reply To Any Sticker With /stickerid Command
+
+• 𝖢𝗈𝗏𝗂𝖽 🦠
+Use This Command With Your Country Name To Get Covid Information
+Example:
+
+/covid 𝖨𝗇𝖽𝗂𝖺
+
+• AudioBook✅
+You Can Convert A PDF File To A Audio File With This Command...
+
+/audiobook: Replay This Command To Any PDF To Generate The Audio
+
+• URL Shortner✅
+ /short: Use This Command With Your Link To Get Shorted Links
+
+• Google Translator✅
+Type text and Reply /tr hi 
+𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+• 𝖾𝗇 = 𝖤𝗇𝗀𝗅𝗂𝗌𝗁
+• 𝗆𝗅 = 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆
+• 𝗁𝗂 = 𝖧𝗂𝗇𝖽𝗂
+
+• File Store Module✅
+
+/link ›› Replay To Any Media To Get 
+/batch To Create A Link For Multiple Media
+
+ Example 
+
+/batch https://t.me/HerleyfilterBot https://t.me/HerleyfilterBot
+
+Features info  🔰"""
     PIN_TXT ="""
 <b>ᴘɪɴ ᴍᴀꜱꜱᴀɢᴇ../</b>
 
