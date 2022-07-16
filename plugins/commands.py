@@ -43,7 +43,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.DEPLOY_TXT,
+            text=script.START_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -77,7 +77,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.DEPLOY_TXT,
+            text=script.START_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
