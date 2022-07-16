@@ -1148,7 +1148,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='source'),
             InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MOVIES_LEAKED_HUB'),
             ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ɪɴꜰᴏ', callback_data='DEPLOY_TXT'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
