@@ -768,6 +768,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image')
             ],[
             InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='deploy'),
+            InlineKeyboardButton('⏺ 1/3  ⏺', callback_data='TEXT1'),
             InlineKeyboardButton('ɴᴇxᴛ ⏩', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1152,6 +1153,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.SONG_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "TEXT1":
+        buttons = [[
+              InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
+            InlineKeyboardButton('ʜᴏᴍᴇ 🏠', callback_data='source')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.TEXT1,
             reply_markup=reply_markup,
             parse_mode='html'
         )
