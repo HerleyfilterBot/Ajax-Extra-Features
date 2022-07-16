@@ -382,6 +382,12 @@ Note:- Give a user details
  • 𝗆 = 𝗆𝗂𝗇𝗎𝗍𝖾𝗌
  • 𝗁 = 𝗁𝗈𝗎𝗋𝗌
  • 𝖽 = 𝖽𝖺𝗒𝗌"""
+    SONG_TXT = """🔰  Song Download Module  🔰
+
+Song Download Module, For Those Who Love Music. You Can Use This Feature For Download Any Song With Suoer Fast Speed...🚀
+
+Commands
+/song Song Name"""
     CREATOR_REQUIRED = """❗<b>You have To Be The Group Creator To Do That.</b>"""
       
     INPUT_REQUIRED = "❗ **Arguments Required**"
