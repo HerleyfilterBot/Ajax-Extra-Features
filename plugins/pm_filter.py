@@ -813,6 +813,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "info":
+        buttons= [[
+            InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ 👥', url='https://t.me/MOVIES_LEAKED_HUB')
+            ],[
+            InlineKeyboardButton('ʜᴏᴍᴇ🏠', callback_data='start'),            
+            InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
+            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑', url='https://github.com/EvamariaTG/EvaMaria')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.INFO_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data == "restric":
         buttons = [[
               InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
