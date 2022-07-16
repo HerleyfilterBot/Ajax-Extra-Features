@@ -43,6 +43,43 @@ Welcome to Help Area 2 🎁"""
  /filters - ʟɪꜱᴛ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴛᴇʀꜱ ᴏꜰ ᴀ ᴄʜᴀᴛ
  /del - ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴛᴇʀ ɪɴ ᴄʜᴀᴛ
  /delall - ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ᴡʜᴏʟᴇ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ"""
+    INFO_TXT = """🤖 Auto Filter + Manual Filter Bot + Somany Of Features ⚡
+
+⚡ WithOut Force Sub ⚡
+
+• Add This Bot To Your Group As Admin And Ask Movies 🔖
+
+• You Can Add Manual Filters Too...✅
+
+• Can Search Movies And Series Via Inline ✅
+
+• Added File Store : Batch, Normal ✅
+
+• Forcesub Removed ✅
+
+• Files On PM / Files On Bot Channel
+
+• Files On PM 
+ Connect A Group And Send The  Command /settings And Turn On 'File Send' = '👤 PM' Then The Bot Send Files PM Only ✅
+
+• Files On Bot Channel ⬇️
+Connect A Group And Send The  Command /settings And Turn  
+'File Send' = '📄 Chat' Then Bot Send Files Bot Channel Only ✅
+
+• Image Editing ⬇️
+Just Send An Image To Bot You Can Edit That Image With Your Choice ✅
+
+•  Fun Games ✅
+
+•  TTS 🎤
+ You Can Send A Text With /tts Command And You Will Get An Audio File Of That Text To Speech ✅
+
+• Purge 🗑️
+You Can Delete All Messages using /purge Command ✅
+
+• Telegraph ✅
+
+• Audio Book ✅"""
     SONG_TXT = """<b>ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ</b>
 
 <b>ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ᴜꜱᴀɢᴇꜱ:</b>
