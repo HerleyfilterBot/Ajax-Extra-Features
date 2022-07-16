@@ -793,7 +793,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='deploy'),
             InlineKeyboardButton('⏺ 2/3  ⏺', callback_data='TEXT2'),
-            InlineKeyboardButton('ɴᴇxᴛ ⏩', callback_data='help')
+            InlineKeyboardButton('ɴᴇxᴛ ⏩', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -803,11 +803,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ 👥', url='https://t.me/MOVIES_LEAKED_HUB')
+            InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ 👥')
             ],[
             InlineKeyboardButton('ʜᴏᴍᴇ🏠', callback_data='start'),            
             InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑', url='https://github.com/EvamariaTG/EvaMaria')
+            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -817,11 +817,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "info":
         buttons= [[
-            InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ 👥', url='https://t.me/MOVIES_LEAKED_HUB')
+            InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ 👥')
             ],[
             InlineKeyboardButton('ʜᴏᴍᴇ🏠', callback_data='start'),            
             InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑', url='https://github.com/EvamariaTG/EvaMaria')
+            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
