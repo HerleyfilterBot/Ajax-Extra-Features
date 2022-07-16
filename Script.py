@@ -26,6 +26,15 @@ Welcome to Help Area 2 🎁"""
 /link - ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ ᴛᴏ ɢᴇᴛ ʟɪɴᴋ
 
 /batch - ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟɪɴᴋ ꜰᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ꜰɪʟᴇꜱ"""
+    TEXT1 = """This Is The Module Page Info
+
+🔰 Your Taken Page Is 1/3 📖"""
+    TEXT2 = """This Is The Module Page Info
+
+🔰 Your Taken Page Is 2/3 📖"""
+     TEXT3 = """This Is The Module Page Info
+
+🔰 Your Taken Page Is 3/3 📖"""
 
     FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
    
