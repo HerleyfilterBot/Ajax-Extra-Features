@@ -35,7 +35,6 @@ Welcome to Help Area 2 🎁"""
      TEXT3 = """This Is The Module Page Info
 
 🔰 Your Taken Page Is 3/3 📖"""
-
     FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
    
  <b>ᴊᴜꜱᴛ ꜱᴏᴍᴇ ᴋɪɴᴅ ᴏꜰ ꜰᴜɴ ᴛʜɪɴɢꜱ</b>
