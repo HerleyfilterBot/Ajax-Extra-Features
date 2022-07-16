@@ -12,7 +12,7 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", ca
 async def reply_info(client, message):
     query = message.text.split(None, 1)[1]
     await message.reply_photo(
-        photo="https://telegra.ph/file/a1839de384a7cb647d2e4.jpg",
+        photo="https://telegra.ph/file/242ee0911232a5109521f.jpg",
         caption=covid_info(query),
         quote=True
     )
