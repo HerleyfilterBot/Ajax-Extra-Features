@@ -22,7 +22,7 @@ from plugins.helper_functions.last_online_hlpr import last_online
 async def who_is(client, message):
     """ extract user information """
     status_message = await message.reply_text(
-        "Wait Bro Let Me Check 🙂"
+        "ᴡᴀɪᴛ ʙʀᴏ ʟᴇᴛ ᴍᴇ ᴄʜᴇᴄᴋ"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -34,7 +34,6 @@ async def who_is(client, message):
     if from_user is None:
         await status_message.edit("no valid user_id / message specified")
         return
-    
     first_name = from_user.first_name or ""
     last_name = from_user.last_name or ""
     username = from_user.username or ""
