@@ -13,18 +13,10 @@ async def left(client,message):
 			translator = Translator()
 			translation = translator.translate(tr_text,dest = lg_cd)
 			hehek = InlineKeyboardMarkup(
-                                [
-                                    [
+                                [[
                                         InlineKeyboardButton(
-                                            text=f"𝘔𝘰𝘳𝘦 𝘓𝘢𝘯𝘨 𝘊𝘰𝘥𝘦𝘴", url="https://cloud.google.com/translate/docs/languages"
-                                        )
-                                    ],
-				    [
-                                        InlineKeyboardButton(
-                                            "𝘊𝘭𝘰𝘴𝘦", callback_data="close_data"
-                                        )
-                                    ],
-                                ]
+                                            "ᴄʟᴏꜱᴇ", callback_data="close_data"
+                                 ]]
                             )
 			try:
 				for i in list:
@@ -32,13 +24,12 @@ async def left(client,message):
 						fromt = i
 					if list[i] == translation.dest:
 						to = i 
-				await message.reply_text(f"translated from {fromt.capitalize()} to {to.capitalize()}\n\n```{translation.text}```", reply_markup=hehek, quote=True)
+				await message.reply_text(f"translated from {fromt.capitalize()} to {to.capitalize()}\n\n```{ᴛʀᴀɴꜱʟᴀᴛɪᴏɴ ᴛᴇxᴛ}```", reply_markup=hehek, quote=True)
 			except:
-			   	await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
+			   	await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{ᴛʀᴀɴꜱʟᴀᴛɪᴏɴ ᴛᴇxᴛ}```", reply_markup=hehek, quote=True)
 			
 
 		except :
 			print("error")
 	else:
-			 ms = await message.reply_text("You can Use This Command by using reply to message")
-			 await ms.delete()
+			 ms = await message.reply_text("ᴛʀᴀɴꜱʟᴀᴛɪᴏɴ ᴛᴇxᴛ
