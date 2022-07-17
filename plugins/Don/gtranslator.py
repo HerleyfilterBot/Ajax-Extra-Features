@@ -14,9 +14,8 @@ async def left(client,message):
 			translation = translator.translate(tr_text,dest = lg_cd)
 			hehek = InlineKeyboardMarkup(
                                 [[
-                                        InlineKeyboardButton(
-                                            "ᴄʟᴏꜱᴇ", callback_data="close_data"
-                                 ]]
+                                InlineKeyboardButton="ᴄʟᴏꜱᴇ", callback_data="close_data")
+                                ]]
                             )
 			try:
 				for i in list:
@@ -32,4 +31,4 @@ async def left(client,message):
 		except :
 			print("error")
 	else:
-			 ms = await message.reply_text("ᴛʀᴀɴꜱʟᴀᴛɪᴏɴ ᴛᴇxᴛ
+			 ms = await message.reply_text("ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ʙʏ ᴜꜱɪɴɢ ʀᴇᴘʟʏ ᴛᴏ ᴍᴇꜱꜱᴀɢᴇ")
