@@ -757,7 +757,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ꜰɪʟᴛᴇʀ', callback_data='manuelfilter'),
             InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ', callback_data='autofilter'),
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ', callback_data='coct')
+            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
             ],[
             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='songs'),
             InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra'),
@@ -1035,7 +1035,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "coct":
         buttons = [[
               InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
-            InlineKeyboardButton('ʜᴏᴍᴇ 🏠', callback_data='photo')
+            InlineKeyboardButton('ʜᴏᴍᴇ 🏠', callback_data='source')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
