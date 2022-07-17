@@ -1,13 +1,13 @@
 class script(object):
     START_TXT = """𝘏𝘦𝘺 {}
 𝘐𝘢𝘮 𝘈 𝘚𝘪𝘮𝘱𝘭𝘦 𝘈𝘶𝘵𝘰 𝘍𝘪𝘭𝘵𝘦𝘳 + 𝘔𝘢𝘯𝘶𝘢𝘭 𝘍𝘪𝘭𝘵𝘦𝘳 + 𝘌𝘹𝘵𝘳𝘢 𝘍𝘦𝘢𝘵𝘶𝘳𝘦𝘴 𝘉𝘰𝘵. 𝘐 𝘊𝘢𝘯 𝘗𝘳𝘰𝘷𝘪𝘥𝘦 𝘔𝘰𝘷𝘪𝘦𝘴 𝘐𝘯 𝘛𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘎𝘳𝘰𝘶𝘱𝘴.𝘐 𝘊𝘢𝘯 𝘈𝘭𝘴𝘰 𝘈𝘥𝘥 𝘍𝘪𝘭𝘵𝘦𝘳𝘴 𝘐𝘯 𝘛𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘎𝘳𝘰𝘶𝘱𝘴.  𝘑𝘶𝘴𝘵 𝘈𝘥𝘥 𝘔𝘦 𝘛𝘰 𝘠𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 𝘈𝘯𝘥 𝘌𝘯𝘫𝘰𝘺"""
-    AREA_TXT = """Hey {}
-Welcome to Help Area 1 🎁"""
-    AREA_TXT2 ="""Hey {}
-Welcome to Help Area 3 🎁"""
-    HELP_TXT = """Hey {}
-Welcome to Help Area 2 🎁"""
-    ABOUT_TXT = """
+    AREA_TXT = """<b>Hey {}
+Welcome to Help Area 1 🎁</b>"""
+    AREA_TXT2 ="""<b>Hey {}
+Welcome to Help Area 3 🎁</b>"""
+    HELP_TXT = """<b>Hey {}
+Welcome to Help Area 2 🎁</b>"""
+    ABOUT_TXT = """<b>
 📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
 
 📡 𝖧ᴏsᴛᴇᴅ ᴏɴ :<a href=http://heroku.com/> ʜᴇʀᴏᴋᴜ</a>
@@ -18,7 +18,7 @@ Welcome to Help Area 2 🎁"""
 
 📊 Dᴀᴛᴀʙᴀsᴇs Sᴀʀᴠᴇʀ : <a href=https://www.mongodb.com/>ᴍᴀɴɢᴏᴅʙ</a>
 
-📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/MOVIES_LEAKED_HUB> 𝖢ʟɪᴄᴋ ʜᴇʀᴇ</a>"""
+📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/MOVIES_LEAKED_HUB> 𝖢ʟɪᴄᴋ ʜᴇʀᴇ</a> </b>"""
     
     FILE_TXT = """
 ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴜꜱᴀɢᴇ :
@@ -26,15 +26,15 @@ Welcome to Help Area 2 🎁"""
 /link - ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ ᴛᴏ ɢᴇᴛ ʟɪɴᴋ
 
 /batch - ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟɪɴᴋ ꜰᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ꜰɪʟᴇꜱ"""
-    TEXT1 = """**<b>This Is The Module Page Info
+    TEXT1 = """<b>This Is The Module Page Info
 
-🔰 Your Taken Page Is 1/3 📖</b>**"""
-    TEXT2 = """This Is The Module Page Info
+🔰 Your Taken Page Is 1/3 📖</b>"""
+    TEXT2 = """<b>This Is The Module Page Info
 
-🔰 Your Taken Page Is 2/3 📖"""
-    TEXT3 = """This Is The Module Page Info
+🔰 Your Taken Page Is 2/3 📖</b>"""
+    TEXT3 = """<b>This Is The Module Page Info
 
-🔰 Your Taken Page Is 3/3 📖"""
+🔰 Your Taken Page Is 3/3 📖</b>"""
     FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
    
  <b>ᴊᴜꜱᴛ ꜱᴏᴍᴇ ᴋɪɴᴅ ᴏꜰ ꜰᴜɴ ᴛʜɪɴɢꜱ</b>
