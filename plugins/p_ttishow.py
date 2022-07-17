@@ -43,7 +43,7 @@ async def save_group(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
             text=f"""<b>👋 Hello Friends Iam Hᴀʀʟᴇʏ Qᴜɪɴɴ !
-Thankyou For Adding Me In{message.chat.title} ❣️\n• WithOut Force Sub  ✅
+Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  ✅
 
 • Add This Bot To Your Group As Admin And Ask Movies 🔖
 
