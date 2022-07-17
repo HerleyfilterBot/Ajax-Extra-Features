@@ -805,8 +805,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons= [[
             InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='deploy')
             ],[
-            InlineKeyboardButton('ʜᴏᴍᴇ🏠', callback_data='start'),            
-            InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
+            InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),            
+            InlineKeyboardButton('ʜᴏᴍᴇ🏠', callback_data='start'),
             InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑', url='https://github.com/EvamariaTG/EvaMaria')
             
         ]]
