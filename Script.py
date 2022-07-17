@@ -8,17 +8,21 @@ Welcome to Help Area 3 🎁</b>"""
     HELP_TXT = """<b>Hey {}
 Welcome to Help Area 2 🎁</b>"""
     ABOUT_TXT = """<b>
+🤖 𝖡ᴏᴛ ɴᴀᴍᴇ : <a href=https://t.me/HerleyfilterBot/>Hᴀʀʟᴇʏ Qᴜɪɴɴ ! </a>
+
 📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
 
 📡 𝖧ᴏsᴛᴇᴅ ᴏɴ :<a href=http://heroku.com/> ʜᴇʀᴏᴋᴜ</a>
 
-📃 𝖲ᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://github.com/EvamariaTG/EvaMaria>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+📃 𝖲ᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://pasty.lus.pm/QZxObR/raw>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 
 📚 𝖥ʀᴀᴍᴇᴡᴏʀᴋ : <a href=https://github.com/pyrogram/pyrogram> ᴘʏʀᴏɢʀᴀᴍ</a>
 
 📊 Dᴀᴛᴀʙᴀsᴇs Sᴀʀᴠᴇʀ : <a href=https://www.mongodb.com/>ᴍᴀɴɢᴏᴅʙ</a>
 
-📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/MOVIES_LEAKED_HUB> 𝖢ʟɪᴄᴋ ʜᴇʀᴇ</a> </b>"""
+👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href=https://pasty.lus.pm/QZxObR/raw/>𝖢ʟɪᴄᴋ ʜᴇʀᴇ</a>
+
+📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ :<a href=https://pasty.lus.pm/QZxObR/raw> 𝖢ʟɪᴄᴋ ʜᴇʀᴇ </b>"""
     
     FILE_TXT = """
 ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴜꜱᴀɢᴇ :
@@ -51,91 +55,59 @@ Welcome to Help Area 2 🎁</b>"""
  /filters - ʟɪꜱᴛ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴛᴇʀꜱ ᴏꜰ ᴀ ᴄʜᴀᴛ
  /del - ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴛᴇʀ ɪɴ ᴄʜᴀᴛ
  /delall - ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ᴡʜᴏʟᴇ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ"""
-    INFO_TXT = """🤖 Auto Filter + Manual Filter Bot + Somany Of Features ⚡
+    INFO_TXT = """<b>🤖Auto Filter + Manual Filter Bot + Somany Of Features ⚡
 
 ⚡ WithOut Force Sub ⚡
 
 • Add This Bot To Your Group As Admin And Ask Movies 🔖
 
-• Files On PM 
- Connect A Group And Send The  Command /settings And Turn On 'File Send' = '👤 PM' Then The Bot Send Files PM Only ✅
+• You Can Add Manual Filters Too...✅
 
+• Added File Store : Batch, Normal ✅
+
+• Forcesub Removed ✅
+
+• Files On PM / Files On Bot Channel✅
+
+• Files On PM ✅
+ 
 • Files On Bot Channel ⬇️
-Connect A Group And Send The  Command /settings And Turn  
-'File Send' = '📄 Chat' Then Bot Send Files Bot Channel Only ✅
 
 • Image Editing ⬇️
-Just Send An Image To Bot You Can Edit That Image With Your Choice ✅
 
 •  Fun Games ✅
 
 •  TTS 🎤
- You Can Send A Text With /tts Command And You Will Get An Audio File Of That Text To Speech ✅
+ 
+• Purge ✅
 
 •  Auto Filter On/Off ✅
-/autofilter on - Enable Autofilter On Your Groups.
- /autofilter off - Disabled Autofilter On Your Groups.
 
-•  Set Custom IMDB Template 
-/set_template - Set 
-/get_template - Get
+•  Set Custom IMDB Template ✅
 
 •  Song Download ✅
- /song Song Name
 
-• 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘠𝘰𝘶𝘵𝘶𝘣𝘦 Video 🎦
-• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
-/mp4 https://youtu.be/
+• 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘠𝘰𝘶𝘵𝘶𝘣𝘦 Video ❎
 
 •  Pin A Message../ 💬
-◉ /pin :- To Pin The Message On Your Chat
-◉ /unpin :- To Unpin Current Pinned Message
 
-• Paste.../
-Paste some texts or documents on a website!
-• /paste [text] - paste the given text on Pasty
+• Paste.../✅
 
 • Youtube Thumbnail ✅
 
-Helps You To Download Any Youtube Video Thumbnail 🖼️
-
-• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
-/ytthumb https://youtu.be/8xp8s6tj0Ts
-
 • Sticker ID✅
-◉ Reply To Any Sticker With /stickerid Command
 
 • 𝖢𝗈𝗏𝗂𝖽 🦠
-Use This Command With Your Country Name To Get Covid Information
-Example:
-
-/covid 𝖨𝗇𝖽𝗂𝖺
 
 • AudioBook✅
-You Can Convert A PDF File To A Audio File With This Command...
-
-/audiobook: Replay This Command To Any PDF To Generate The Audio
 
 • URL Shortner✅
- /short: Use This Command With Your Link To Get Shorted Links
-
-• Google Translator✅
-Type text and Reply /tr hi 
-𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
-• 𝖾𝗇 = 𝖤𝗇𝗀𝗅𝗂𝗌𝗁
-• 𝗆𝗅 = 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆
-• 𝗁𝗂 = 𝖧𝗂𝗇𝖽𝗂
 
 • File Store Module✅
 
-/link ›› Replay To Any Media To Get 
-/batch To Create A Link For Multiple Media
+•  📂200K +...Still Adding 🔄
 
- Example 
-
-/batch https://t.me/HerleyfilterBot https://t.me/HerleyfilterBot
-
-Features info  🔰"""
+Features info  🔰</b>"""
     PIN_TXT ="""
 <b>ᴘɪɴ ᴍᴀꜱꜱᴀɢᴇ../</b>
 
