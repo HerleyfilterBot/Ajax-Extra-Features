@@ -803,11 +803,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ 👥')
+            InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
             ],[
             InlineKeyboardButton('ʜᴏᴍᴇ🏠', callback_data='start'),            
             InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑')
+            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -817,11 +817,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "info":
         buttons= [[
-            InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ 👥')
+            InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
             ],[
             InlineKeyboardButton('ʜᴏᴍᴇ🏠', callback_data='start'),            
             InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑')
+            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
