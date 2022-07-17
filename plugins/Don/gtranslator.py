@@ -32,9 +32,9 @@ async def left(client,message):
 						fromt = i
 					if list[i] == translation.dest:
 						to = i 
-				await message.reply_text(f"translated from {fromt.capitalize()} to {to.capitalize()}\n\n```{ᴛʀᴀɴꜱʟᴀᴛɪᴏɴ ᴛᴇxᴛ}```", reply_markup=hehek, quote=True)
+				await message.reply_text(f"translated from {fromt.capitalize()} to {to.capitalize()}\n\n```{translation.text}```", reply_markup=hehek, quote=True)
 			except:
-			   	await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{ᴛʀᴀɴꜱʟᴀᴛɪᴏɴ ᴛᴇxᴛ}```", reply_markup=hehek, quote=True)
+			   	await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
 			
 
 		except :
