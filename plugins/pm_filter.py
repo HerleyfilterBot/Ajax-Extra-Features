@@ -807,6 +807,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('ʜᴏᴍᴇ🏠', callback_data='start'),            
             InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
+            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ 📑', url='https://github.com/EvamariaTG/EvaMaria')
             
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
