@@ -10,19 +10,19 @@ Welcome to Help Area 2 🎁</b>"""
     ABOUT_TXT = """<b>
 🤖 𝖡ᴏᴛ ɴᴀᴍᴇ : <a href=https://t.me/HerleyfilterBot/>Hᴀʀʟᴇʏ Qᴜɪɴɴ ! </a>
 
-📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
+📝 𝖫ᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>Pʏᴛᕼᴏɴ</a>
 
-📡 𝖧ᴏsᴛᴇᴅ ᴏɴ :<a href=http://heroku.com/> ʜᴇʀᴏᴋᴜ</a>
+📡 𝖧ᴏsᴛᴇᴅ ᴏɴ : <a href=http://heroku.com/>Hᴇʀᴏᴋᴜ</a>
 
-📃 𝖲ᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://pasty.lus.pm/QZxObR/raw>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+📃 𝖲ᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://pasty.lus.pm/QZxObR/raw>Cʟʜᴄᴋ ᕼᴇʀᴇ</a>
 
-📚 𝖥ʀᴀᴍᴇᴡᴏʀᴋ : <a href=https://github.com/pyrogram/pyrogram> ᴘʏʀᴏɢʀᴀᴍ</a>
+📚 𝖥ʀᴀᴍᴇᴡᴏʀᴋ : <a href=https://github.com/pyrogram/pyrogram>Pʏʀᴏɢʀᴀᴍ</a>
 
-📊 Dᴀᴛᴀʙᴀsᴇs Sᴀʀᴠᴇʀ : <a href=https://www.mongodb.com/>ᴍᴀɴɢᴏᴅʙ</a>
+📊 Dᴀᴛᴀʙᴀsᴇs Sᴀʀᴠᴇʀ : <a href=https://www.mongodb.com/>Mᴏɴɢᴏᴅʙ</a>
 
-👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href=https://pasty.lus.pm/QZxObR/raw/>𝖢ʟɪᴄᴋ ʜᴇʀᴇ</a>
+👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href=https://pasty.lus.pm/QZxObR/raw/>Cʟʜᴄᴋ ᕼᴇʀᴇ</a>
 
-📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ :<a href=https://pasty.lus.pm/QZxObR/raw> 𝖢ʟɪᴄᴋ ʜᴇʀᴇ </b>"""
+📢 𝖴ᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://pasty.lus.pm/QZxObR/raw/> Cʟʜᴄᴋ ᕼᴇʀᴇ</a> </b>"""
     
     FILE_TXT = """
 ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴜꜱᴀɢᴇ :
