@@ -12,10 +12,20 @@ async def left(client,message):
 			tr_text = message.reply_to_message.text
 			translator = Translator()
 			translation = translator.translate(tr_text,dest = lg_cd)
-			hehek = InlineKeyboardMarkup([[
-                                InlineKeyboardButton="ᴄʟᴏꜱᴇ", callback_data="close_data",
-                             ]]
-                          )    
+			hehek = InlineKeyboardMarkup(
+                                [
+                                    [
+                                        InlineKeyboardButton(
+                                            text=f"ʟᴏɴɢ ᴄᴏᴅꜱ", url="https://cloud.google.com/translate/docs/languages"
+                                        )
+                                    ],
+				    [
+                                        InlineKeyboardButton(
+                                            "ᴄʟᴏꜱᴇ", callback_data="close_data"
+                                        )
+                                    ],
+                                ]
+                            )    
 			try:
 				for i in list:
 					if list[i]==translation.src:
