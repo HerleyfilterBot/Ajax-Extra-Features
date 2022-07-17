@@ -26,9 +26,9 @@ Welcome to Help Area 2 🎁"""
 /link - ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ ᴛᴏ ɢᴇᴛ ʟɪɴᴋ
 
 /batch - ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟɪɴᴋ ꜰᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ꜰɪʟᴇꜱ"""
-    TEXT1 = """This Is The Module Page Info
+    TEXT1 = """**<b>This Is The Module Page Info
 
-🔰 Your Taken Page Is 1/3 📖"""
+🔰 Your Taken Page Is 1/3 📖</b>**"""
     TEXT2 = """This Is The Module Page Info
 
 🔰 Your Taken Page Is 2/3 📖"""
@@ -57,16 +57,6 @@ Welcome to Help Area 2 🎁"""
 
 • Add This Bot To Your Group As Admin And Ask Movies 🔖
 
-• You Can Add Manual Filters Too...✅
-
-• Can Search Movies And Series Via Inline ✅
-
-• Added File Store : Batch, Normal ✅
-
-• Forcesub Removed ✅
-
-• Files On PM / Files On Bot Channel
-
 • Files On PM 
  Connect A Group And Send The  Command /settings And Turn On 'File Send' = '👤 PM' Then The Bot Send Files PM Only ✅
 
@@ -81,9 +71,6 @@ Just Send An Image To Bot You Can Edit That Image With Your Choice ✅
 
 •  TTS 🎤
  You Can Send A Text With /tts Command And You Will Get An Audio File Of That Text To Speech ✅
-
-• Purge 🗑️
-You Can Delete All Messages using /purge Command 
 
 •  Auto Filter On/Off ✅
 /autofilter on - Enable Autofilter On Your Groups.
