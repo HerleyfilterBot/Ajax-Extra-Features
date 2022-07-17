@@ -16,7 +16,7 @@ async def left(client,message):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            text=f"ʟᴏɴɢ ᴄᴏᴅꜱ", url="https://cloud.google.com/translate/docs/languages"
+                                            text=f"ʟᴀɴɢᴜᴀɢᴇ ᴄᴏᴅꜱ", url="https://cloud.google.com/translate/docs/languages"
                                         )
                                     ],
 				    [
