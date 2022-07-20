@@ -1239,10 +1239,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴏɴ' if settings["welcome"] else 'ᴏꜰꜰ',callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.settings_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
+            await query.message.edit_reply_markup(reply_markup)
        )
     elif query.data == "stats":
         buttons = [[
