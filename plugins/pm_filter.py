@@ -166,23 +166,7 @@ async def next_page(bot, query):
         n_offset = int(n_offset)
     except:
         n_offset = 0
-    if 0 < offset <= 10:
-        off_set = 0
-    elif offset == 0:
-        off_set = None
-    else:
-        off_set = offset - 10
-    if n_offset == 0:
-        buttons= [[
-              InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
-              InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.PINGS_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-    )
+
     if not files:
         return
     settings = await get_settings(query.message.chat.id)
@@ -196,11 +180,7 @@ async def next_page(bot, query):
             for file in files
         ]
     else:
-        btn = [[
-              InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
-              InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
-        ]],[
-             
+        btn = [
             [
                 InlineKeyboardButton(
                     text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
