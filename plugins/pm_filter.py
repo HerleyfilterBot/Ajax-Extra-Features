@@ -187,7 +187,11 @@ async def next_page(bot, query):
         return
     settings = await get_settings(query.message.chat.id)
     if settings['button']:
-        btn = [
+        btn = [[
+              InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
+              InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
+        ],[
+            [
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
