@@ -670,51 +670,51 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ),
         )
     elif query.data == "bright":
-        await bright(client, query.message)
+        await bright(client, query.photo)
     elif query.data == "mix":
-        await mix(client, query.message)
+        await mix(client, query.photo)
     elif query.data == "b|w":
-        await black_white(client, query.message)
+        await black_white(client, query.photo)
     elif query.data == "circlewithbg":
-        await circle_with_bg(client, query.message)
+        await circle_with_bg(client, query.photo)
     elif query.data == "circlewithoutbg":
-        await circle_without_bg(client, query.message)
+        await circle_without_bg(client, query.photo)
     elif query.data == "green":
-        await green_border(client, query.message)
+        await green_border(client, query.photo)
     elif query.data == "blue":
-        await blue_border(client, query.message)
+        await blue_border(client, query.photo)
     elif query.data == "red":
-        await red_border(client, query.message)
+        await red_border(client, query.photo)
     elif query.data == "black":
-        await black_border(client, query.message)
+        await black_border(client, query.photo)
     elif query.data == "circle_sticker":
-        await round_sticker(client, query.message)
+        await round_sticker(client, query.photo)
     elif query.data == "inverted":
-        await inverted(client, query.message)
+        await inverted(client, query.photo)
     elif query.data == "stkr":
-        await sticker(client, query.message)
+        await sticker(client, query.photo)
     elif query.data == "cur_ved":
-        await edge_curved(client, query.message)
+        await edge_curved(client, query.photo)
     elif query.data == "90":
-        await rotate_90(client, query.message)
+        await rotate_90(client, query.photo)
     elif query.data == "180":
-        await rotate_180(client, query.message)
+        await rotate_180(client, query.photo)
     elif query.data == "270":
-        await rotate_270(client, query.message)
+        await rotate_270(client, query.photo)
     elif query.data == "contrast":
-        await contrast(client, query.message)
+        await contrast(client, query.photo)
     elif query.data == "box":
-        await box_blur(client, query.message)
+        await box_blur(client, query.photo)
     elif query.data == "gas":
-        await g_blur(client, query.message)
+        await g_blur(client, query.photo)
     elif query.data == "normal":
-        await normal_blur(client, query.message)
+        await normal_blur(client, query.photo)
     elif query.data == "sepia":
-        await sepia_mode(client, query.message)
+        await sepia_mode(client, query.photo)
     elif query.data == "pencil":
         await pencil(client, query.message)
     elif query.data == "cartoon":
-        await cartoon(client, query.message)
+        await cartoon(client, query.photo)
     elif query.data == "normalglitch1":
         await normalglitch_1(client, query.message)
     elif query.data == "normalglitch2":
@@ -743,9 +743,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await removebg_sticker(client, query.message)
     elif query.data == "pages":
         await query.answer()
-       )
     elif query.data == "start":
-        buttons = [[
+         buttons = [[
             InlineKeyboardButton('ꜱᴜʀᴘʀɪꜱᴇ', callback_data='deploy'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
