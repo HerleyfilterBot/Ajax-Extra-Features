@@ -470,6 +470,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ᴍᴇ p!', url='https://t.me/HerleyfilterBot') ] ] ),
                     protect_content=True if ident == "filep" else False 
                 )
                 await query.answer('ᴄʜᴇᴄᴋ ᴘᴍ, ɪ ʜᴀᴠᴇ ꜱᴇɴᴛ ꜰɪʟᴇꜱ ɪɴ ᴘᴍ ', show_alert=True)
@@ -742,6 +743,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await removebg_sticker(client, query.message)
     elif query.data == "pages":
         await query.answer()
+       )
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('ꜱᴜʀᴘʀɪꜱᴇ', callback_data='deploy'),
@@ -1279,7 +1281,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton('ʙᴏᴛ ᴘᴍ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('ᴏɴ' if settings["botpm"] else 'ᴏꜰꜰ',
+                    InlineKeyboardButton('ᴏꜰꜰ' if settings["botpm"] else 'ᴏɴ',
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
