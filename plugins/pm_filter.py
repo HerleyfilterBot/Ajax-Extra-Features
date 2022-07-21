@@ -1207,7 +1207,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✙ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✙', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
             ],[
             InlineKeyboardButton('ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='source'),
-            InlineKeyboardButton('ꜱᴇᴛᴛɪɴɢꜱ ⚙ ', callback_data='settings')
+            InlineKeyboardButton('🔮 ꜱᴛᴀᴛᴜꜱ 🔮', callback_data='stats')
             ],[
             InlineKeyboardButton('ɪɴꜰᴏ', callback_data='info'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ ', callback_data='about')
@@ -1218,32 +1218,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "settings":
-        buttons = [[ 
-            InlineKeyboardButton('ꜰɪʟᴛᴇʀ ʙᴜᴛᴛᴏɴ',callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-            InlineKeyboardButton('ꜱɪɴɢʟᴇ' if settings["button"] else 'ᴅᴏᴜʙʟᴇ',callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
-            ],[
-            InlineKeyboardButton('ʙᴏᴛ ᴘᴍ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-            InlineKeyboardButton('ᴏɴ' if settings["botpm"] else 'ᴏꜰꜰ',callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
-            ],[
-            InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-            InlineKeyboardButton('ᴏɴ' if settings["file_secure"] else 'ᴏꜰꜰ',callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
-            ],[
-            InlineKeyboardButton('ɪᴍᴅʙ ɪɴꜰᴏ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-            InlineKeyboardButton('ᴏɴ' if settings["imdb"] else 'ᴏꜰꜰ',callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
-            ],[
-            InlineKeyboardButton('ꜱᴘᴇʟʟ ᴄʜᴇᴄᴋ',callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-            InlineKeyboardButton('ᴏɴ' if settings["spell_check"] else 'ᴏꜰꜰ',callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-            ],[
-            InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-            InlineKeyboardButton('ᴏɴ' if settings["welcome"] else 'ᴏꜰꜰ',callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
-         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.settings_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-       )
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='admin'),
