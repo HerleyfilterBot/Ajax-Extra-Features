@@ -745,13 +745,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
          buttons = [[
-            InlineKeyboardButton('ꜱᴜʀᴘʀɪꜱᴇ',
-                              callback_data='deploy')
-        ]
-      ]
+            InlineKeyboardButton('ꜱᴜʀᴘʀɪꜱᴇ',callback_data='deploy')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention),
+            text=script.IMAGE_TXT.format(temp.B_NAME),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
