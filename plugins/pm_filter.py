@@ -178,7 +178,7 @@ async def next_page(bot, query):
               InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text('
+        await query.message.edit_text(
             text=script.PINGS_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
