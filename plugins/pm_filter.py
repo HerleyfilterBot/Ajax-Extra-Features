@@ -768,18 +768,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "image":
-        buttons= [[
-              InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
-            InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.IMAGE_TXT.format(temp.B_NAME),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
     elif query.data == "whois":
         buttons = [[
               InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
