@@ -173,16 +173,16 @@ async def next_page(bot, query):
     else:
         off_set = offset - 10
     if n_offset == 0:
-        btn.append(
-              [[
+        btn.append([[
               InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
-            InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
+              InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.PINGS_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
+
     if not files:
         return
     settings = await get_settings(query.message.chat.id)
