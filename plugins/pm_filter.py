@@ -199,7 +199,7 @@ async def next_page(bot, query):
         btn = [[
               InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
               InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
-        ],[
+        ),
              [
             [
                 InlineKeyboardButton(
