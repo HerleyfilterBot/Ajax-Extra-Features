@@ -108,7 +108,6 @@ Welcome to Help Area 2 🎁</b>"""
 •  📂200K +...Still Adding 🔄
 
 Features info  🔰</b>"""
-    settings_TXT ="""<b>This Is The Module Page Info</b>"""
     PIN_TXT ="""
 <b>ᴘɪɴ ᴍᴀꜱꜱᴀɢᴇ../</b>
 
