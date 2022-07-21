@@ -199,8 +199,8 @@ async def next_page(bot, query):
         btn = [[
               InlineKeyboardButton('⛔ ᴄʟᴏꜱᴇ', callback_data='close_data'),
               InlineKeyboardButton('⏪ ʙᴀᴄᴋ', callback_data='source')
-        ],
-             [
+        ],[
+             
             [
                 InlineKeyboardButton(
                     text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
