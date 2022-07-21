@@ -119,7 +119,8 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ᴍᴇ !', url='https://t.me/HerleyfilterBot') ] ] ),
+                    protect_content=msg.get('protect', True),
                     )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -128,7 +129,8 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ᴍᴇ !', url='https://t.me/HerleyfilterBot') ] ] ),
+                    protect_content=msg.get('protect', True),
                     )
             except Exception as e:
                 logger.warning(e, exc_info=True)
