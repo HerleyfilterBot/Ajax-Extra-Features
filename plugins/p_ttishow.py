@@ -49,7 +49,8 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
 
 •  📂300K+...Still Adding 🔄 </b>""",
         reply_markup=reply_markup)
-   else:
+   
+      else:
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
                 try:
