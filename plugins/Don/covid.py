@@ -31,7 +31,7 @@ def covid_info(country_name):
         latitude = info['latitude']
         longitude = info['longitude']
         recovered = info['recovered']
-        covid_info = f"""<b> ᴄᴏᴠɪᴅ 19 ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ
+        covid_info =f"""<b>•ᴄᴏᴠɪᴅ 19 ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ
 • Country : `{country}`
 • Actived : `{active}` Confirmed : `{confirmed}`
 • Deaths : `{deaths}`
