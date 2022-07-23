@@ -31,16 +31,15 @@ def covid_info(country_name):
         latitude = info['latitude']
         longitude = info['longitude']
         recovered = info['recovered']
-        covid_info = f"""--**𝙲𝙾𝚅𝙸𝙳 𝟷𝟿 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽**--
-᚛› Country : `{country}`
-᚛› Actived : `{active}`
-᚛› Confirmed : `{confirmed}`
-᚛› Deaths : `{deaths}`
-᚛› ID : `{info_id}`
-᚛› Last Update : `{last_update}`
-᚛› Latitude : `{latitude}`
-᚛› Longitude : `{longitude}`
-᚛› Recovered : `{recovered}`"""
+        covid_info = f"""<b> ᴄᴏᴠɪᴅ 19 ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ
+• Country : `{country}`
+• Actived : `{active}` Confirmed : `{confirmed}`
+• Deaths : `{deaths}`
+• ID : `{info_id}`
+• Last Update : `{last_update}`
+• Latitude : `{latitude}`
+• Longitude : `{longitude}`
+• Recovered : `{recovered}` </b>"""
         return covid_info
     except Exception as error:
         return error
