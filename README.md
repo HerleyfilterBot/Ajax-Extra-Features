@@ -1,1 +1,3 @@
-https://telegra.ph/file/e9e4d57decf7d98c0f0ce.jpg
+<p align="center">
+  <img src="assets/AJAX.png" alt="Ajax-Extra-FeaturesLogo">
+</p>
