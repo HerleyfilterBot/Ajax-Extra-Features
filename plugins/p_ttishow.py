@@ -47,7 +47,7 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
 
 • Add This Bot To Your Group As Admin And Ask Movies 🔖
 
-•  📂300K+...Still Adding 🔄 </b>"""
+•  📂300K+...Still Adding 🔄 </b>""",
         reply_markup=reply_markup)
    else:
         for u in message.new_chat_members:
