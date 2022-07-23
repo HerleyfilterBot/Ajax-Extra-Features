@@ -44,7 +44,9 @@ async def save_group(bot, message):
         await message.reply_text(
             text=f"""<b>👋 Hello Friends Iam <a href=https://t.me/HerleyfilterBot/>@Hᴀʀʟᴇʏ Qᴜɪɴɴ !</a>
 Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  ✅
+
 • Add This Bot To Your Group As Admin And Ask Movies 🔖
+
 •  📂300K+...Still Adding 🔄 </b>""",
             reply_markup=reply_markup)
     else:
@@ -72,7 +74,7 @@ async def leave_a_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat.
-            text='<b>ʜᴇʟʟᴏ ꜰʀɪᴇɴᴅꜱ, \ᴍʏ ᴀᴅᴍɪɴ ʜᴀꜱ ᴛᴏʟᴅ ᴍᴇ ᴛᴏ ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ɢʀᴏᴜᴘ ꜱᴏ ɪ ɢᴏ! ɪꜰ ʏᴏᴜ ᴡᴀɴɴᴀ ᴀᴅᴅ ᴍᴇ ᴀɢᴀɪɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ </b>',
+            text='<b> ʜᴇʟʟᴏ ꜰʀɪᴇɴᴅꜱ, \ᴍʏ ᴀᴅᴍɪɴ ʜᴀꜱ ᴛᴏʟᴅ ᴍᴇ ᴛᴏ ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ɢʀᴏᴜᴘ ꜱᴏ ɪ ɢᴏ! ɪꜰ ʏᴏᴜ ᴡᴀɴɴᴀ ᴀᴅᴅ ᴍᴇ ᴀɢᴀɪɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ </b>',
             reply_markup=reply_markup,
         )
 
