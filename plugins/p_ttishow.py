@@ -56,9 +56,7 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey ❤ {u.mention}, Welcome to {message.chat.title}.../</b>"),
-            
-            
+            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey ♥️ {u.mention}, Welcome to {message.chat.title}.../</b>")
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
@@ -66,7 +64,7 @@ async def leave_a_chat(bot, message):
         return await message.reply('Give me a chat id')
     chat = message.command[1]
     try:
-        chat = int(chat).
+        chat = int(chat)
     except:
         chat = chat
     try:
