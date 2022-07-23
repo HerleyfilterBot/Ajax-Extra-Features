@@ -47,11 +47,7 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
 
 • Add This Bot To Your Group As Admin And Ask Movies 🔖
 
-•  📂200K +...Still Adding 🔄</b>""",
-            reply_markup=reply_markup)
-          await message.reply_text(
-            await asyncio.sleep(6)
-            await hehe.delete()
+•  📂300K+...Still Adding 🔄</b>"""
     else:
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
@@ -60,6 +56,9 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply(f"<b>Hey ❤ {u.mention}, Welcome to {message.chat.title}.../</b>")
+            hehe = await message.reply(temp.MELCOW['welcome'] ))
+            await asyncio.sleep(4)
+            await hehe.delete()
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
