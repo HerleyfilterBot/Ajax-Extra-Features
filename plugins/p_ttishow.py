@@ -57,10 +57,8 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply(f"<b>Hey ❤ {u.mention}, Welcome to {message.chat.title}.../</b>"),
-            reply_markup = temp.MELCOW['welcome']
-            await asyncio.sleep(4)
-            await temp.MELCOW['welcome'].delete()
-
+            
+            
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
@@ -68,7 +66,7 @@ async def leave_a_chat(bot, message):
         return await message.reply('Give me a chat id')
     chat = message.command[1]
     try:
-        chat = int(chat)
+        chat = int(chat).
     except:
         chat = chat
     try:
@@ -77,7 +75,7 @@ async def leave_a_chat(bot, message):
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
-            chat_id=chat,
+            chat_id=chat.
             text='<b>ʜᴇʟʟᴏ ꜰʀɪᴇɴᴅꜱ, \ᴍʏ ᴀᴅᴍɪɴ ʜᴀꜱ ᴛᴏʟᴅ ᴍᴇ ᴛᴏ ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ɢʀᴏᴜᴘ ꜱᴏ ɪ ɢᴏ! ɪꜰ ʏᴏᴜ ᴡᴀɴɴᴀ ᴀᴅᴅ ᴍᴇ ᴀɢᴀɪɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ.</b>',
             reply_markup=reply_markup,
         )
