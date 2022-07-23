@@ -48,16 +48,15 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
 • Add This Bot To Your Group As Admin And Ask Movies 🔖
 
 •  📂300K+...Still Adding 🔄 </b>""",
-        reply_markup=reply_markup)
-   
-  else:
+             reply_markup=reply_markup)
+     else:
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
                 try:
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey ❤ {u.mention}, Welcome to {message.chat.title}.../</b>")
+            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey ❤ {u.mention}, Welcome to {message.chat.title}.../</b>"),
             reply_markup = temp.MELCOW['welcome']
             await asyncio.sleep(4)
             await temp.MELCOW['welcome'].delete()
