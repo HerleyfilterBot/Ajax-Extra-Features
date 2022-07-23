@@ -12,8 +12,9 @@ BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", ca
 async def reply_info(client, message):
     query = message.text.split(None, 1)[1]
     await message.reply_photo(
-        photo="https://telegra.ph/file/242ee0911232a5109521f.jpg",
+        photo="https://telegra.ph/file/e9e4d57decf7d98c0f0ce.jpg",
         caption=covid_info(query),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ᴍᴇ !', url='https://t.me/HerleyfilterBot') ] ] ),
         quote=True
     )
 
@@ -31,9 +32,10 @@ def covid_info(country_name):
         latitude = info['latitude']
         longitude = info['longitude']
         recovered = info['recovered']
-        covid_info =f"""<b>•ᴄᴏᴠɪᴅ 19 ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ
+        covid_info = f"""<b> Information 
 • Country : `{country}`
-• Actived : `{active}` Confirmed : `{confirmed}`
+• Actived : `{active}`
+• Confirmed : `{confirmed}`
 • Deaths : `{deaths}`
 • ID : `{info_id}`
 • Last Update : `{last_update}`
