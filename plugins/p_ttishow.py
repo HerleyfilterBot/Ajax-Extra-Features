@@ -48,7 +48,8 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
 • Add This Bot To Your Group As Admin And Ask Movies 🔖
 
 •  📂300K+...Still Adding 🔄</b>"""
-    else:
+    )
+   else:
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
                 try:
