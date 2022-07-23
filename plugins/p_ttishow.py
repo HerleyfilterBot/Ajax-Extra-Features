@@ -49,7 +49,7 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
 
 •  📂200K +...Still Adding 🔄</b>""",
             reply_markup=reply_markup)
-            hehe = await message.reply_text))
+          await message.reply_text(
             await asyncio.sleep(6)
             await hehe.delete()
     else:
