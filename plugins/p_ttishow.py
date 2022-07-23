@@ -50,7 +50,7 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
 •  📂300K+...Still Adding 🔄 </b>""",
         reply_markup=reply_markup)
    
-      else:
+  else:
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
                 try:
@@ -58,9 +58,9 @@ Thankyou For Adding Me In {message.chat.title} ❣️\n• WithOut Force Sub  �
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply(f"<b>Hey ❤ {u.mention}, Welcome to {message.chat.title}.../</b>")
-            hehe = await message.reply(temp.MELCOW['welcome'] ))
+            reply_markup = temp.MELCOW['welcome']
             await asyncio.sleep(4)
-            await hehe.delete()
+            await temp.MELCOW['welcome'].delete()
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
