@@ -73,8 +73,8 @@ async def leave_a_chat(bot, message):
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
-            chat_id=chat.
-            text='<b> ʜᴇʟʟᴏ ꜰʀɪᴇɴᴅꜱ, \ᴍʏ ᴀᴅᴍɪɴ ʜᴀꜱ ᴛᴏʟᴅ ᴍᴇ ᴛᴏ ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ɢʀᴏᴜᴘ ꜱᴏ ɪ ɢᴏ! ɪꜰ ʏᴏᴜ ᴡᴀɴɴᴀ ᴀᴅᴅ ᴍᴇ ᴀɢᴀɪɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ </b>',
+            chat_id=chat,
+            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>',
             reply_markup=reply_markup,
         )
 
